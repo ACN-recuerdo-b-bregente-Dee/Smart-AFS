@@ -214,7 +214,6 @@ public class AttributeSummary{
         }
         
         
-        
         return new AttributeSummaryWrapper(digital, nonDigital, total);
         
     }
