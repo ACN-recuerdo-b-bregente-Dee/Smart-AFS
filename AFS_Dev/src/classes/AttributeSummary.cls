@@ -213,6 +213,7 @@ public class AttributeSummary{
                                         Opportunity__c = oppId);
         }
         
+        
         return new AttributeSummaryWrapper(digital, nonDigital, total);
         
     }
