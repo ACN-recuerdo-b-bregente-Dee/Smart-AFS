@@ -122,6 +122,7 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>*</members>
         <members>Accenture_Digital_Dashboard</members>
         <members>Accenture_Digital_Dashboard/Accenture_Digital_Dashboard</members>
         <members>Accenture_Digital_Dashboard/Accenture_Digital_Dashboard2</members>
@@ -181,12 +182,14 @@
         <name>DataCategoryGroup</name>
     </types>
     <types>
+        <members>*</members>
         <members>ERD_Force</members>
         <members>SalesTools</members>
         <members>SharedDocuments</members>
         <name>Document</name>
     </types>
     <types>
+        <members>*</members>
         <members>Visualforce_Email_Templates</members>
         <members>Visualforce_Email_Templates/APPROVAL_TO_SUBMIT</members>
         <members>Visualforce_Email_Templates/Approval_Email_template</members>
@@ -268,6 +271,7 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>*</members>
         <members>AFS_sandbox_domain</members>
         <members>Endpoint</members>
         <members>MyDomain</members>
@@ -276,6 +280,7 @@
         <name>RemoteSiteSetting</name>
     </types>
     <types>
+        <members>*</members>
         <members>AFS_Civilian_Shared_Reports</members>
         <members>AFS_Civilian_Shared_Reports/Civilian_BPW_Report_Revenue</members>
         <members>AFS_Civilian_Shared_Reports/Civilian_BPW_Sales1</members>
