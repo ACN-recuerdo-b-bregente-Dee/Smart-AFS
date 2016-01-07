@@ -1,3 +1,6 @@
+//test Lhea Valencia
+
+
 public class DigitalReportAllActiveController {
 
     public static Decimal opportunityTotalCurrency {get;set;}
