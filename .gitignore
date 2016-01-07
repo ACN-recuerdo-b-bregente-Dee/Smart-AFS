@@ -7,3 +7,4 @@ AFS_Dev/build.xml
 AFS_Dev/build.properties
 README.md
 Push_git.bat
+sonar-project.properties
