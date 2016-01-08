@@ -49,6 +49,9 @@
     <columns>
         <field>Opportunity.Total_Current_Revenue__c</field>
     </columns>
+    <columns>
+        <field>Attribute__c.AttributePercent__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Attribute__c.Attribute_Type__c</column>
