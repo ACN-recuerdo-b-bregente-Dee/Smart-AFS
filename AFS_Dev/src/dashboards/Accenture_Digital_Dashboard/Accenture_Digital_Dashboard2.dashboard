@@ -11,7 +11,7 @@
             <componentType>VisualforcePage</componentType>
             <header>Qualified</header>
             <page>DigitalReportPipeline</page>
-            <pageHeightInPixels>300</pageHeightInPixels>
+            <pageHeightInPixels>350</pageHeightInPixels>
         </components>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
