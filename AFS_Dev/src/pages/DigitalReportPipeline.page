@@ -1,5 +1,5 @@
 <apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false">
-    
+    <apex:form >
     <apex:outputLabel for="title" value="Overall TCR: " style="font-weight:700"  /> 
     <apex:outputText id="title" value="{0, number, $0,000}"  >
         <apex:param value="{!chartData[0].overalTotalCurrency}" />
@@ -12,11 +12,9 @@
     <apex:outputText id="title3" value="{0, number, $0,000}"  >
         <apex:param value="{!chartData[0].accDigitalTotalCurrency}" />
     </apex:outputText>
-    <apex:form >
     <br/>
-        <apex:commandButton value="Go to Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000POAa')"/>
+        <apex:commandButton value="Go to Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000POAa');"/>
         <apex:commandLink value="Go to Report" action="{!goToReportLink}"/>
-    </apex:form>  
         <apex:chart height="280" width="380" data="{!ChartData}" resizable="false" theme="Salesforce">
             <apex:pieSeries dataField="data" labelField="name" highlight="true">
                 <apex:chartTips height="20" width="250" rendererFn="renderChartTip" />
@@ -24,6 +22,7 @@
             </apex:pieSeries>
             <apex:legend position="right" font="bold 10px Helvetica"/>
         </apex:chart>
+    </apex:form>  
     
 <script>
 function renderChartTip(klass, item) {
