@@ -120,7 +120,7 @@ public class DigitalReportPipelineController {
     
     public pagereference goToReportLink(){
         PageReference pageRef = new PageReference('/00OJ0000000POAa');
-        pageRef.setRedirect(true);
+        pageRef.setRedirect(false);
         return pageRef;
     }
     

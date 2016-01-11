@@ -4,8 +4,6 @@
     <apex:outputText id="title" value="{0, number, $0,000}"  >
         <apex:param value="{!chartData[0].overalTotalCurrency}" />
     </apex:outputText><br/>
-    <apex:form >
-    </apex:form>
     <apex:outputLabel for="title2" value="Overall Accenture Digital %: " style="font-weight:700"  /> 
     <apex:outputText id="title2" value="{0, number, 0.00}%" >
         <apex:param value="{!chartData[0].accDigitalTotalPercent}" />
