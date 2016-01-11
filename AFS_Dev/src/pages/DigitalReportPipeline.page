@@ -14,7 +14,7 @@
     </apex:outputText>
     <br/>
         <apex:commandButton value="Go to Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000POAa');"/>
-        <apex:commandLink value="Go to Report" action="{!goToReportLink}"/>
+        <apex:commandLink value="Go to Report" action="{!goToReport}" oncomplete="window.parent.location.href='https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000POAa';"/>
         <apex:chart height="280" width="380" data="{!ChartData}" resizable="false" theme="Salesforce">
             <apex:pieSeries dataField="data" labelField="name" highlight="true">
                 <apex:chartTips height="20" width="250" rendererFn="renderChartTip" />
