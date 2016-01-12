@@ -92,34 +92,6 @@
             <translation><!-- TC Offerings --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>TEST TYPE1</masterLabel>
-            <translation><!-- TEST TYPE1 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>TEST TYPE2</masterLabel>
-            <translation><!-- TEST TYPE2 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>TEST TYPE3</masterLabel>
-            <translation><!-- TEST TYPE3 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>TEST TYPE4</masterLabel>
-            <translation><!-- TEST TYPE4 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>TEST TYPE5</masterLabel>
-            <translation><!-- TEST TYPE5 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>TEST TYPE6</masterLabel>
-            <translation><!-- TEST TYPE6 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Test Attribute</masterLabel>
-            <translation><!-- Test Attribute --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Ventures &amp; Acquisitions</masterLabel>
             <translation><!-- Ventures &amp; Acquisitions --></translation>
         </picklistValues>

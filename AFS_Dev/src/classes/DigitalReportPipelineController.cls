@@ -125,7 +125,7 @@ public class DigitalReportPipelineController {
         
         digitalPipeline = new List<Attribute__c>();
         nonDigitalPipeline = new List<Attribute__c>();
-        for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c FROM Attribute__c WHERE Opportunity_Name__c IN :allOpportunities]){
+        for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c, Attribute_Value__c, Attribute_TCR__c, AttributePercent__c FROM Attribute__c WHERE Opportunity_Name__c IN :allOpportunities]){
             if(attribute.Attribute_Type__c.equals('Accenture Digital')){
                 digitalPipeline.add(attribute);
             }

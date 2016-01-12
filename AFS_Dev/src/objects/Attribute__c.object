@@ -225,34 +225,6 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
                 <fullName>Ventures &amp; Acquisitions</fullName>
                 <default>false</default>
             </picklistValues>
-            <picklistValues>
-                <fullName>TEST TYPE1</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TEST TYPE2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TEST TYPE3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TEST TYPE4</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TEST TYPE5</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>TEST TYPE6</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Attribute</fullName>
-                <default>false</default>
-            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackHistory>true</trackHistory>
