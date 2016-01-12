@@ -1,0 +1,8 @@
+<apex:page controller="DigitalReportAllActiveController">
+
+    <apex:pageBlock >
+        <apex:pageblockSection >
+
+        </apex:pageblockSection>
+    </apex:pageBlock>
+</apex:page>

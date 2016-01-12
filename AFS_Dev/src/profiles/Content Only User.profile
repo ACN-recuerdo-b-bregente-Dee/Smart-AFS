@@ -3386,7 +3386,7 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>DisplayAttributeReport</apexPage>
+        <apexPage>DisplayAllActiveReport</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

@@ -13,6 +13,8 @@ public class DigitalReportPipelineController {
     public List<Attribute__c> nonDigitalPipeline {get; set;}
     public Integer digitalSize {get; set;}
     public Integer nonDigitalSize {get; set;}
+    public String digitalSum {get; set;}
+    public String nonDigitalSum {get; set;}
     
     List<chartData> chartSource {get;set;}
     public List<chartData> getChartData(){
@@ -125,14 +127,25 @@ public class DigitalReportPipelineController {
         
         digitalPipeline = new List<Attribute__c>();
         nonDigitalPipeline = new List<Attribute__c>();
+        Decimal dSum = 0;
+        Decimal ndSum = 0;
         for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c, Attribute_Value__c, Attribute_TCR__c, AttributePercent__c FROM Attribute__c WHERE Opportunity_Name__c IN :allOpportunities]){
+            
+            Decimal tcr = 0;
+            if(attribute.Attribute_TCR__c != null){
+                tcr = attribute.Attribute_TCR__c;
+            }
+            
             if(attribute.Attribute_Type__c.equals('Accenture Digital')){
                 digitalPipeline.add(attribute);
+                dSum += tcr;
             }
             else{
                 nonDigitalPipeline.add(attribute);
+                ndSum += tcr;
             }
         }
+        
         digitalSize = digitalPipeline.size();
         nonDigitalSize = nonDigitalPipeline.size();
         return null;

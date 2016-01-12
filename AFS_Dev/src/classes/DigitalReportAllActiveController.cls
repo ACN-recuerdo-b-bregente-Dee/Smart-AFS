@@ -8,6 +8,8 @@ public class DigitalReportAllActiveController {
     public static Decimal accentureTotalPercentage {get;set;}
     public static Decimal otherTotalPercentage = 0;   
     public List<Opportunity> allOpportunities {get; set;}
+    public List<Attribute__c> digitalAtt {get;set;}
+    public List<Attribute__c> nonDigitalAtt {get;set;}
     public List<chartData> getData() 
     {
         return getChartData();

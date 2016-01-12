@@ -3632,7 +3632,7 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>DisplayAttributeReport</apexPage>
+        <apexPage>DisplayAllActiveReport</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
