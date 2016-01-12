@@ -3485,6 +3485,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>DisplayAttributeReport</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>DisplayChart</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
