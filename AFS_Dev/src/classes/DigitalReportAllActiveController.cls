@@ -46,6 +46,10 @@ public class DigitalReportAllActiveController {
         }
         
         //try{
+        
+        digitalAtt = [SELECT id, Opportunity_Name__c, Attribute_Type__c FROM Attribute__c WHERE Opportunity_Name__c IN: allOpportunities AND Attribute_Type__c = 'Accenture Digital'];
+        
+        
         totalOppTCR =[SELECT SUM(Total_Current_Revenue__c) totalOppTCR FROM Opportunity WHERE Id IN: allOpportunities];
         totalAccentureTCR = [SELECT SUM(Accenture_Digital_TCR__c) totalAccentureTCR FROM Attribute__c WHERE Opportunity_Name__c IN:
                             allOpportunities AND Attribute_Type__c = 'Accenture Digital'];
