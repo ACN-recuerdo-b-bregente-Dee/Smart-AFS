@@ -9,8 +9,9 @@ public class DigitalReportPipelineController {
         return getChartData();
     } 
     
-    public Map<String, List<Attribute__c>> pipelineAttributeMap {get; set;}
-  
+    public List<Attribute__c> digitalPipeline {get; set;}
+    public List<Attribute__c> nonDigitalPipeline {get; set;}
+    
     List<chartData> chartSource {get;set;}
     public List<chartData> getChartData(){
         chartSource = new List<chartData>();
@@ -38,15 +39,15 @@ public class DigitalReportPipelineController {
         ]);
         
         
-        pipelineAttributeMap = new Map<String, List<Attribute__c>>();
-        pipelineAttributeMap.put('Digital', new List<Attribute__c>());
-        pipelineAttributeMap.put('NonDigital', new List<Attribute__c>());
+        digitalPipeline = new List<Attribute__c>();
+        nonDigitalPipeline = new List<Attribute__c>();
+        
         for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c FROM Attribute__c]){
             if(attribute.Attribute_Type__c.equals('Accenture Digital')){
-                pipelineAttributeMap.get('Digital').add(attribute);
+                digitalPipeline.add(attribute);
             }
             else{
-                pipelineAttributeMap.get('NonDigital').add(attribute);
+                nonDigitalPipeline.add(attribute);
             }
         }
         

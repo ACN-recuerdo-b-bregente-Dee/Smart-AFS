@@ -1,3 +1,25 @@
 <apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false">
     <apex:sectionHeader title="Opportunity" subtitle="Digital and Non-Digital Report"/>
+    
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection collapsible="false" columns="1">
+                <apex:pageBlockTable value="{!digitalPipeline}" var="digital">
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Digital" style="font-size:12px"/>
+                    </apex:facet>
+                    <apex:column value="{!digital.Opportunity_Name__c}"/>
+                    <apex:column value="{!digital.Attribute_Type__c}"/>
+                </apex:pageBlockTable>
+                <apex:pageBlockTable value="{!nonDigitalPipeline}" var="nonDigital">
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Non Digital" style="font-size:12px"/>
+                    </apex:facet>
+                    <apex:column value="{!nonDigital.Opportunity_Name__c}"/>
+                    <apex:column value="{!nonDigital.Attribute_Type__c}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
 </apex:page>
