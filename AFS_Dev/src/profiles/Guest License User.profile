@@ -3420,6 +3420,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>PipelineReport</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>RedirectAttribute</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

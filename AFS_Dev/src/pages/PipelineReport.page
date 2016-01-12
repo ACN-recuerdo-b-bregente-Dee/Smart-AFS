@@ -1,0 +1,3 @@
+<apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false">
+    <apex:sectionHeader title="Opportunity" subtitle="Digital and Non-Digital Report"/>
+</apex:page>

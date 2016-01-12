@@ -30,7 +30,7 @@ public with sharing class OpportunityLineItemHandler {
         RevenueBL.setRevenueSchedule(newOpportunityLineItemMap, UTIL_Constants.OPPLINEITEMHANDLER_LINE_MAP_INSERT);
         CalculateFinancialSummaryBL.calFinancialSummary1(newOpportunityLineItemMap.values(), false);
         RevenueBL.setOpportunityRevenue(newOpportunityLineItemMap);
-        AttributeSummary.calculateAttributeSummary(newOpportunityLineItemMap);
+        //AttributeSummary.calculateAttributeSummary(newOpportunityLineItemMap);
     }
     
     /**Call your helper class for Before Update*/                
@@ -51,7 +51,7 @@ public with sharing class OpportunityLineItemHandler {
             RevenueBL.setRevenueSchedule(newOpportunityLineItemMap, UTIL_Constants.OPPLINEITEMHANDLER_LINE_MAP_UPDATE);
             CalculateFinancialSummaryBL.calFinancialSummary1(newOpportunityLineItemMap.values(), false);
             RevenueBL.setOpportunityRevenue(newOpportunityLineItemMap);
-            AttributeSummary.calculateAttributeSummary(newOpportunityLineItemMap);
+            //AttributeSummary.calculateAttributeSummary(newOpportunityLineItemMap);
             
         //}
     }
@@ -67,7 +67,7 @@ public with sharing class OpportunityLineItemHandler {
         //Call your helper class
          CalculateFinancialSummaryBL.calFinancialSummary1(deletedOpportunityLineItems.values(), false);
          RevenueBL.setOpportunityRevenue(deletedOpportunityLineItems);
-         AttributeSummary.calculateAttributeSummary(deletedOpportunityLineItems);
+         //AttributeSummary.calculateAttributeSummary(deletedOpportunityLineItems);
     }
     
     /**Call your helper class for UnDelete*/
