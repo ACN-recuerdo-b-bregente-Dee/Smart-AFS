@@ -8,6 +8,8 @@ public class DigitalReportPipelineController {
     {
         return getChartData();
     } 
+    
+    public Map<String, List<Attribute__c>> pipelineAttributeMap {get; set;}
   
     List<chartData> chartSource {get;set;}
     public List<chartData> getChartData(){
@@ -34,6 +36,19 @@ public class DigitalReportPipelineController {
         Opportunity[] allOpportunities = new List<Opportunity>([
         SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
         ]);
+        
+        
+        pipelineAttributeMap = new Map<String, List<Attribute__c>>();
+        pipelineAttributeMap.put('Digital', new List<Attribute__c>());
+        pipelineAttributeMap.put('NonDigital', new List<Attribute__c>());
+        for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c FROM Attribute__c]){
+            if(attribute.Attribute_Type__c.equals('Accenture Digital')){
+                pipelineAttributeMap.get('Digital').add(attribute);
+            }
+            else{
+                pipelineAttributeMap.get('NonDigital').add(attribute);
+            }
+        }
         
         //try{
         totalOppTCR =[SELECT SUM(Total_Current_Revenue__c) totalOppTCR FROM Opportunity WHERE Id IN: allOpportunities];
