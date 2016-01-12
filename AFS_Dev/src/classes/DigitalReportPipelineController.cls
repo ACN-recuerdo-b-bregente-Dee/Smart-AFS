@@ -11,6 +11,8 @@ public class DigitalReportPipelineController {
     
     public List<Attribute__c> digitalPipeline {get; set;}
     public List<Attribute__c> nonDigitalPipeline {get; set;}
+    public Integer digitalSize {get; set;}
+    public Integer nonDigitalSize {get; set;}
     
     List<chartData> chartSource {get;set;}
     public List<chartData> getChartData(){
@@ -37,19 +39,6 @@ public class DigitalReportPipelineController {
         Opportunity[] allOpportunities = new List<Opportunity>([
         SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
         ]);
-        
-        
-        digitalPipeline = new List<Attribute__c>();
-        nonDigitalPipeline = new List<Attribute__c>();
-        
-        for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c FROM Attribute__c]){
-            if(attribute.Attribute_Type__c.equals('Accenture Digital')){
-                digitalPipeline.add(attribute);
-            }
-            else{
-                nonDigitalPipeline.add(attribute);
-            }
-        }
         
         //try{
         totalOppTCR =[SELECT SUM(Total_Current_Revenue__c) totalOppTCR FROM Opportunity WHERE Id IN: allOpportunities];
@@ -126,6 +115,27 @@ public class DigitalReportPipelineController {
         //this.overalTotalCurrency = String.valueOf(Math.random() * 1000);
         
     }
+    }
+    
+    public PageReference getReport() {
+        Opportunity[] allOpportunities = new List<Opportunity>([
+        SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
+        ]);
+        
+        
+        digitalPipeline = new List<Attribute__c>();
+        nonDigitalPipeline = new List<Attribute__c>();
+        for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c FROM Attribute__c WHERE Opportunity_Name__c IN :allOpportunities]){
+            if(attribute.Attribute_Type__c.equals('Accenture Digital')){
+                digitalPipeline.add(attribute);
+            }
+            else{
+                nonDigitalPipeline.add(attribute);
+            }
+        }
+        digitalSize = digitalPipeline.size();
+        nonDigitalSize = nonDigitalPipeline.size();
+        return null;
     }
     
     public pagereference goToReport(){
