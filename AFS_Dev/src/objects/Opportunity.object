@@ -3826,7 +3826,7 @@ ISBLANK(Client_Industry_Area_of_Service__c)
     </validationRules>
     <validationRules>
         <fullName>CloseDate_cannot_be_in_the_past</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>When a user creates a new opportunity, the Expected Contract Sign Date field (which is a renamed label from Close Date) should always be set in the future and not the date before the opportunity was created</description>
         <errorConditionFormula>AND(
 OR(
