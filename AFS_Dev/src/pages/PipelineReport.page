@@ -16,14 +16,14 @@
                         <apex:facet name="header">Attribute TCR</apex:facet>
                         <apex:outputField value="{!digital.Attribute_TCR__c}"/>
                         <apex:facet name="footer">
-                            Total: <span class="t1">$0</span>
+                            Total: <span class="t1">${!digitalSum}</span>
                         </apex:facet>
                     </apex:column>
                     <apex:column width="20%">
                         <apex:facet name="header">Opportunity TCR</apex:facet>
                         <apex:outputField value="{!allOpportunities[digital.Opportunity_Name__c].Total_Current_Revenue__c}"/>
                         <apex:facet name="footer">
-                            Total: <span class="t1">$0</span>
+                            Total: <span class="t1">${!digitalOppSum}</span>
                         </apex:facet>
                     </apex:column>
                 </apex:pageBlockTable>
@@ -32,10 +32,23 @@
                         <apex:outputLabel value="Non Digital - {!nonDigitalSize} records" style="font-size:14px"/>
                     </apex:facet>
                     <apex:column value="{!nonDigital.Opportunity_Name__c}" width="20%"/>
-                    <apex:column value="{!nonDigital.Attribute_Type__c}" width="20%"/>
-                    <apex:column value="{!nonDigital.Attribute_Value__c}" width="20%"/>
-                    <apex:column value="{!nonDigital.AttributePercent__c}" width="20%"/>
-                    <apex:column value="{!nonDigital.Attribute_TCR__c}" width="20%"/>
+                    <apex:column value="{!nonDigital.Attribute_Type__c}" width="15%"/>
+                    <apex:column value="{!nonDigital.Attribute_Value__c}" width="15%"/>
+                    <apex:column value="{!nonDigital.AttributePercent__c}" width="15%"/>
+                    <apex:column width="15%">
+                        <apex:facet name="header">Attribute TCR</apex:facet>
+                        <apex:outputField value="{!nonDigital.Attribute_TCR__c}"/>
+                        <apex:facet name="footer">
+                            Total: <span class="t1">${!nonDigitalSum}</span>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column width="20%">
+                        <apex:facet name="header">Opportunity TCR</apex:facet>
+                        <apex:outputField value="{!allOpportunities[nonDigital.Opportunity_Name__c].Total_Current_Revenue__c}"/>
+                        <apex:facet name="footer">
+                            Total: <span class="t1">${!nonDigitalOppSum}</span>
+                        </apex:facet>
+                    </apex:column>
                 </apex:pageBlockTable>
                 <apex:pageBlockTable value="{!noAttributePipeline}" var="noAttribute">
                     <apex:facet name="header">

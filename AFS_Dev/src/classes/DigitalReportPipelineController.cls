@@ -143,6 +143,8 @@ public class DigitalReportPipelineController {
         Decimal ndOppSum = 0;
         Decimal noAttOppSum = 0;
         
+        Set<Id> digitalOpp = new Set<Id>();
+        Set<Id> nonDigitalOpp = new Set<Id>();
         for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c, Attribute_Value__c, Attribute_TCR__c, AttributePercent__c
                                         FROM Attribute__c WHERE Opportunity_Name__c IN :allOpportunities.keySet()]){
             oppWithAttribute.add(attribute.Opportunity_Name__c);
@@ -159,12 +161,18 @@ public class DigitalReportPipelineController {
             if(attribute.Attribute_Type__c.equals('Accenture Digital')){
                 digitalPipeline.add(attribute);
                 dSum += tcr;
-                dOppSum += oppTcr;
+                if(!digitalOpp.contains(attribute.Opportunity_Name__c)){
+                    dOppSum += oppTcr;
+                    digitalOpp.add(attribute.Opportunity_Name__c);
+                }
             }
             else{
                 nonDigitalPipeline.add(attribute);
                 ndSum += tcr;
-                ndOppSum += oppTcr;
+                if(!nonDigitalOpp.contains(attribute.Opportunity_Name__c)){
+                    ndOppSum += oppTcr;
+                    nonDigitalOpp.add(attribute.Opportunity_Name__c);
+                }
             }
         }
         
@@ -184,12 +192,12 @@ public class DigitalReportPipelineController {
         nonDigitalSize = nonDigitalPipeline.size();
         noAttributeSize = noAttributePipeline.size();
         
-        digitalSum = dSum.format() + '.' + String.valueOf(dSum.setScale(2)).split('\\.')[1];
-        //nonDigitalSum
-        //noAttributelSum {get; set;}
-        //digitalOppSum {get; set;}
-        //nonDigitalOppSum {get; set;}
-        //noAttributelOppSum {get; set;}
+        digitalSum = dSum.format();
+        nonDigitalSum = ndSum.format();
+        noAttributelSum = noAttSum.format();
+        digitalOppSum = dOppSum.format();
+        nonDigitalOppSum = ndOppSum.format();
+        noAttributelOppSum = noAttOppSum.format();
         
         return null;
     }
