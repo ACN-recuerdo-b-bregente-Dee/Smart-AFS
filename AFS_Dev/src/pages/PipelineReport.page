@@ -55,10 +55,26 @@
                         <apex:outputLabel value="Opportunities With No Attributes - {!noAttributeSize} records" style="font-size:14px"/>
                     </apex:facet>
                     <apex:column value="{!noAttribute.Opportunity_Name__c}" width="20%"/>
-                    <apex:column value="{!noAttribute.Attribute_Type__c}" width="20%"/>
-                    <apex:column value="{!noAttribute.Attribute_Value__c}" width="20%"/>
-                    <apex:column value="{!noAttribute.AttributePercent__c}" width="20%"/>
-                    <apex:column value="{!noAttribute.Attribute_TCR__c}" width="20%"/>
+                    <apex:column value="{!noAttribute.Attribute_Type__c}" width="15%"/>
+                    <apex:column value="{!noAttribute.Attribute_Value__c}" width="15%"/>
+                    <apex:column width="15%">
+                        <apex:facet name="header">Attribute %</apex:facet>
+                        <apex:outputText value="-"/>
+                    </apex:column>
+                    <apex:column width="15%">
+                        <apex:facet name="header">Attribute TCR</apex:facet>
+                        <apex:outputText value="-"/>
+                        <apex:facet name="footer">
+                            Total: <span class="t1">${!noAttributeSum}</span>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column width="20%">
+                        <apex:facet name="header">Opportunity TCR</apex:facet>
+                        <apex:outputField value="{!allOpportunities[noAttribute.Opportunity_Name__c].Total_Current_Revenue__c}"/>
+                        <apex:facet name="footer">
+                            Total: <span class="t1">${!noAttributeOppSum}</span>
+                        </apex:facet>
+                    </apex:column>
                 </apex:pageBlockTable>
             </apex:pageBlockSection>
         </apex:pageBlock>

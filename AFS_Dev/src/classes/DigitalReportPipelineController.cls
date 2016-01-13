@@ -18,10 +18,10 @@ public class DigitalReportPipelineController {
     public Integer noAttributeSize {get; set;}
     public String digitalSum {get; set;}
     public String nonDigitalSum {get; set;}
-    public String noAttributelSum {get; set;}
+    public String noAttributeSum {get; set;}
     public String digitalOppSum {get; set;}
     public String nonDigitalOppSum {get; set;}
-    public String noAttributelOppSum {get; set;}
+    public String noAttributeOppSum {get; set;}
     
     List<chartData> chartSource {get;set;}
     public List<chartData> getChartData(){
@@ -194,10 +194,10 @@ public class DigitalReportPipelineController {
         
         digitalSum = dSum.format();
         nonDigitalSum = ndSum.format();
-        noAttributelSum = noAttSum.format();
+        noAttributeSum = noAttSum.format();
         digitalOppSum = dOppSum.format();
         nonDigitalOppSum = ndOppSum.format();
-        noAttributelOppSum = noAttOppSum.format();
+        noAttributeOppSum = noAttOppSum.format();
         
         return null;
     }

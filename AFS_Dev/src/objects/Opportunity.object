@@ -1841,11 +1841,7 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
     <fields>
         <fullName>Opp_Year__c</fullName>
         <externalId>false</externalId>
-        <formula>TEXT(
-IF(MONTH(CloseDate) &gt;=9,
-YEAR(CloseDate) + 1,
-YEAR(CloseDate)
-))</formula>
+        <formula>IF( (MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()) + 1)  || (MONTH(CloseDate) &gt;=1 &amp;&amp; MONTH(CloseDate) &lt;=8) &amp;&amp; YEAR(CloseDate) = YEAR(Today())  , &quot;Current&quot;, IF( MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()), &quot;Next&quot;,&quot;n/q&quot;))</formula>
         <label>Opp Year</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
