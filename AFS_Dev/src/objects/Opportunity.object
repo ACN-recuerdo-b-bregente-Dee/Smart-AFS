@@ -1841,7 +1841,7 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
     <fields>
         <fullName>Opp_Year__c</fullName>
         <externalId>false</externalId>
-        <formula>IF( (MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()) + 1)  || (MONTH(CloseDate) &gt;=1 &amp;&amp; MONTH(CloseDate) &lt;=8) &amp;&amp; YEAR(CloseDate) = YEAR(Today())  , &quot;Current&quot;, IF( MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()), &quot;Next&quot;,&quot;&quot;))</formula>
+        <formula>IF( (MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()) - 1)  || (MONTH(CloseDate) &gt;=1 &amp;&amp; MONTH(CloseDate) &lt;=8) &amp;&amp; YEAR(CloseDate) = YEAR(Today())  , &quot;Current&quot;, IF( MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()) || MONTH(CloseDate) &lt;=8 &amp;&amp; YEAR(CloseDate) = YEAR(TODAY()) + 1, &quot;Next&quot;,&quot;&quot;))</formula>
         <label>Opp Year</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -3826,7 +3826,7 @@ ISBLANK(Client_Industry_Area_of_Service__c)
     </validationRules>
     <validationRules>
         <fullName>CloseDate_cannot_be_in_the_past</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>When a user creates a new opportunity, the Expected Contract Sign Date field (which is a renamed label from Close Date) should always be set in the future and not the date before the opportunity was created</description>
         <errorConditionFormula>AND(
 OR(
