@@ -9,10 +9,23 @@
                         <apex:outputLabel value="Digital - {!digitalSize} records" style="font-size:14px"/>
                     </apex:facet>
                     <apex:column value="{!digital.Opportunity_Name__c}" width="20%"/>
-                    <apex:column value="{!digital.Attribute_Type__c}" width="20%"/>
-                    <apex:column value="{!digital.Attribute_Value__c}" width="20%"/>
-                    <apex:column value="{!digital.AttributePercent__c}" width="20%"/>
-                    <apex:column value="{!digital.Attribute_TCR__c}" width="20%"/>
+                    <apex:column value="{!digital.Attribute_Type__c}" width="15%"/>
+                    <apex:column value="{!digital.Attribute_Value__c}" width="15%"/>
+                    <apex:column value="{!digital.AttributePercent__c}" width="15%"/>
+                    <apex:column width="15%">
+                        <apex:facet name="header">Attribute TCR</apex:facet>
+                        <apex:outputField value="{!digital.Attribute_TCR__c}"/>
+                        <apex:facet name="footer">
+                            Total: <span class="t1">$0</span>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column width="20%">
+                        <apex:facet name="header">Opportunity TCR</apex:facet>
+                        <apex:outputField value="{!allOpportunities[digital.Opportunity_Name__c].Total_Current_Revenue__c}"/>
+                        <apex:facet name="footer">
+                            Total: <span class="t1">$0</span>
+                        </apex:facet>
+                    </apex:column>
                 </apex:pageBlockTable>
                 <apex:pageBlockTable value="{!nonDigitalPipeline}" var="nonDigital">
                     <apex:facet name="header">

@@ -176,12 +176,21 @@ public class DigitalReportPipelineController {
                     Attribute_Value__c = '-',
                     AttributePercent__c = null
                     ));
+                noAttOppSum += allOpportunities.get(oppId).Total_Current_Revenue__c;
             }
         }
         
         digitalSize = digitalPipeline.size();
         nonDigitalSize = nonDigitalPipeline.size();
         noAttributeSize = noAttributePipeline.size();
+        
+        digitalSum = dSum.format() + '.' + String.valueOf(dSum.setScale(2)).split('\\.')[1];
+        //nonDigitalSum
+        //noAttributelSum {get; set;}
+        //digitalOppSum {get; set;}
+        //nonDigitalOppSum {get; set;}
+        //noAttributelOppSum {get; set;}
+        
         return null;
     }
     
