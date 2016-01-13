@@ -1839,6 +1839,16 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Opp_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(YEAR( CloseDate )  = YEAR(TODAY()), &quot;Current&quot;, IF(YEAR( CloseDate )  = (YEAR(TODAY())+1), &quot;Next&quot;,&quot;&quot;))</formula>
+        <label>Opp Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Opportunity_Auto_Id__c</fullName>
         <displayFormat>{0}</displayFormat>
         <externalId>false</externalId>

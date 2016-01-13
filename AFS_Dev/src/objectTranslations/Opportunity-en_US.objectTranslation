@@ -1237,6 +1237,10 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
         <name>OSP_Notes__c</name>
     </fields>
     <fields>
+        <label><!-- Opp Year --></label>
+        <name>Opp_Year__c</name>
+    </fields>
+    <fields>
         <help><!-- Number that is system-generated when a new opportunity is created. Opportunity ID field is read-only. --></help>
         <label><!-- Opportunity Auto Id --></label>
         <name>Opportunity_Auto_Id__c</name>

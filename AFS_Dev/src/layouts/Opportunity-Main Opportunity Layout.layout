@@ -90,6 +90,10 @@
                 <behavior>Readonly</behavior>
                 <field>Attribute_Type_Digital_or_Not__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Opp_Year__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
