@@ -24,6 +24,16 @@
                     <apex:column value="{!nonDigital.AttributePercent__c}" width="20%"/>
                     <apex:column value="{!nonDigital.Attribute_TCR__c}" width="20%"/>
                 </apex:pageBlockTable>
+                <apex:pageBlockTable value="{!noAttributePipeline}" var="noAttribute">
+                    <apex:facet name="header">
+                        <apex:outputLabel value="Opportunities With No Attributes - {!noAttributeSize} records" style="font-size:14px"/>
+                    </apex:facet>
+                    <apex:column value="{!noAttribute.Opportunity_Name__c}" width="20%"/>
+                    <apex:column value="{!noAttribute.Attribute_Type__c}" width="20%"/>
+                    <apex:column value="{!noAttribute.Attribute_Value__c}" width="20%"/>
+                    <apex:column value="{!noAttribute.AttributePercent__c}" width="20%"/>
+                    <apex:column value="{!noAttribute.Attribute_TCR__c}" width="20%"/>
+                </apex:pageBlockTable>
             </apex:pageBlockSection>
         </apex:pageBlock>
     </apex:form>
