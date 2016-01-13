@@ -11,6 +11,8 @@ public class DigitalReportPipelineController {
     
     public List<Attribute__c> digitalPipeline {get; set;}
     public List<Attribute__c> nonDigitalPipeline {get; set;}
+    public List<Attribute__c> noAttributePipeline {get; set;}
+    public Map<Id, Opportunity> allOpportunities {get; set;}
     public Integer digitalSize {get; set;}
     public Integer nonDigitalSize {get; set;}
     public String digitalSum {get; set;}
@@ -120,17 +122,21 @@ public class DigitalReportPipelineController {
     }
     
     public PageReference getReport() {
-        Opportunity[] allOpportunities = new List<Opportunity>([
-        SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
+        allOpportunities = new Map<Id, Opportunity>([
+        SELECT Id, Total_Current_Revenue__c FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
         ]);
         
         
         digitalPipeline = new List<Attribute__c>();
         nonDigitalPipeline = new List<Attribute__c>();
+        noAttributePipeline = new List<Attribute__c>();
+        Set<Id> oppWithAttribute = new Set<Id>();
         Decimal dSum = 0;
         Decimal ndSum = 0;
-        for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c, Attribute_Value__c, Attribute_TCR__c, AttributePercent__c FROM Attribute__c WHERE Opportunity_Name__c IN :allOpportunities]){
-            
+        
+        for(Attribute__c attribute : [SELECT Opportunity_Name__c, Attribute_Type__c, Attribute_Value__c, Attribute_TCR__c, AttributePercent__c
+                                        FROM Attribute__c WHERE Opportunity_Name__c IN :allOpportunities.keySet()]){
+            oppWithAttribute.add(attribute.Opportunity_Name__c);
             Decimal tcr = 0;
             if(attribute.Attribute_TCR__c != null){
                 tcr = attribute.Attribute_TCR__c;
