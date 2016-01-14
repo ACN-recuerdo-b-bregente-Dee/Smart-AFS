@@ -3625,6 +3625,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>DigitalNonDigitalPipelineReport</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>DigitalReportAllActive</apexPage>
         <enabled>true</enabled>
     </pageAccesses>

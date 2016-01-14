@@ -1,4 +1,4 @@
-<apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false" action="{!getReport}">
+<apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false" action="{!getReports}">
     <apex:sectionHeader title="Opportunity" subtitle="Digital and Non-Digital Report"/>
     
     <apex:form >
@@ -16,14 +16,14 @@
                         <apex:facet name="header">Attribute TCR</apex:facet>
                         <apex:outputField value="{!digital.Attribute_TCR__c}"/>
                         <apex:facet name="footer">
-                            Total: <span class="t1">${!digitalSum}</span>
+                            <span class="t1">${!digitalSum}</span>
                         </apex:facet>
                     </apex:column>
                     <apex:column width="20%">
                         <apex:facet name="header">Opportunity TCR</apex:facet>
                         <apex:outputField value="{!allOpportunities[digital.Opportunity_Name__c].Total_Current_Revenue__c}"/>
                         <apex:facet name="footer">
-                            Total: <span class="t1">${!digitalOppSum}</span>
+                            <span class="t1">${!digitalOppSum}</span>
                         </apex:facet>
                     </apex:column>
                 </apex:pageBlockTable>
@@ -39,40 +39,14 @@
                         <apex:facet name="header">Attribute TCR</apex:facet>
                         <apex:outputField value="{!nonDigital.Attribute_TCR__c}"/>
                         <apex:facet name="footer">
-                            Total: <span class="t1">${!nonDigitalSum}</span>
+                            <span class="t1">${!nonDigitalSum}</span>
                         </apex:facet>
                     </apex:column>
                     <apex:column width="20%">
                         <apex:facet name="header">Opportunity TCR</apex:facet>
                         <apex:outputField value="{!allOpportunities[nonDigital.Opportunity_Name__c].Total_Current_Revenue__c}"/>
                         <apex:facet name="footer">
-                            Total: <span class="t1">${!nonDigitalOppSum}</span>
-                        </apex:facet>
-                    </apex:column>
-                </apex:pageBlockTable>
-                <apex:pageBlockTable value="{!noAttributePipeline}" var="noAttribute">
-                    <apex:facet name="header">
-                        <apex:outputLabel value="Opportunities With No Attributes - {!noAttributeSize} records" style="font-size:14px"/>
-                    </apex:facet>
-                    <apex:column value="{!noAttribute.Opportunity_Name__c}" width="20%"/>
-                    <apex:column value="{!noAttribute.Attribute_Type__c}" width="15%"/>
-                    <apex:column value="{!noAttribute.Attribute_Value__c}" width="15%"/>
-                    <apex:column width="15%">
-                        <apex:facet name="header">Attribute %</apex:facet>
-                        <apex:outputText value="-"/>
-                    </apex:column>
-                    <apex:column width="15%">
-                        <apex:facet name="header">Attribute TCR</apex:facet>
-                        <apex:outputText value="-"/>
-                        <apex:facet name="footer">
-                            Total: <span class="t1">${!noAttributeSum}</span>
-                        </apex:facet>
-                    </apex:column>
-                    <apex:column width="20%">
-                        <apex:facet name="header">Opportunity TCR</apex:facet>
-                        <apex:outputField value="{!allOpportunities[noAttribute.Opportunity_Name__c].Total_Current_Revenue__c}"/>
-                        <apex:facet name="footer">
-                            Total: <span class="t1">${!noAttributeOppSum}</span>
+                            <span class="t1">${!nonDigitalOppSum}</span>
                         </apex:facet>
                     </apex:column>
                 </apex:pageBlockTable>
@@ -90,10 +64,10 @@
                         <apex:facet name="header"></apex:facet>
                     </apex:column>
                     <apex:column >
-                        <apex:facet name="header">Total: <span class="t1">${!grandSum}</span></apex:facet>
+                        <apex:facet name="header"><span class="t1">${!grandSum}</span></apex:facet>
                     </apex:column>
                     <apex:column >
-                        <apex:facet name="header">Total: <span class="t1">${!grandOppSum}</span></apex:facet>
+                        <apex:facet name="header"><span class="t1">${!grandOppSum}</span></apex:facet>
                     </apex:column>
                 </apex:pageBlockTable>
             </apex:pageBlockSection>
