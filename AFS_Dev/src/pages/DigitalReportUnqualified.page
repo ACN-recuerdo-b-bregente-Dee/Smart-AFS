@@ -13,8 +13,8 @@
         <apex:param value="{!chartData[0].accDigitalTotalCurrency}" />
     </apex:outputText>
     <br/><br/>
-        <apex:commandButton value="Go to Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000PPA7');"/>&nbsp;&nbsp;
-        <apex:commandButton value="VF Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev--c.cs10.visual.force.com/apex/PipelineReport');"/>&nbsp;&nbsp;
+        <apex:commandButton value="Go to Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000PPnE');"/>&nbsp;&nbsp;
+        <apex:commandButton value="VF Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev--c.cs10.visual.force.com/apex/UnqualfiedReport');"/>&nbsp;&nbsp;
         <!--
         <apex:commandLink value="Go to Report" action="{!goToReport}" oncomplete="window.parent.location.href='https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000POAa';"/>
         -->

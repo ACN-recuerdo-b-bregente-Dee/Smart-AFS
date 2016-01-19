@@ -132,7 +132,7 @@ public class DigitalReportUnqualifiedController {
     
     public PageReference getReport() {
         allOpportunities = new Map<Id, Opportunity>([
-        SELECT Id, Total_Current_Revenue__c FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
+        SELECT Id, Total_Current_Revenue__c FROM Opportunity WHERE  Reporting_Status__c = 'Unqualified'  
         ]);
         
         
@@ -221,7 +221,7 @@ public class DigitalReportUnqualifiedController {
     
     public PageReference getReports() {
         allOpportunities = new Map<Id, Opportunity>([
-        SELECT Id, Total_Current_Revenue__c FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
+        SELECT Id, Total_Current_Revenue__c FROM Opportunity WHERE  Reporting_Status__c = 'Unqualified'  
         ]);
         
         

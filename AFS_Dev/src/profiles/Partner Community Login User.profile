@@ -3530,6 +3530,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>UnqualfiedReport</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>code_coverage_vf</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
