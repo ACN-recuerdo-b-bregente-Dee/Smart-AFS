@@ -176,7 +176,7 @@
                 <column>Opportunity$Total_Current_Revenue__c</column>
             </chartSummary>
             <componentType>ColumnStacked</componentType>
-            <displayUnits>Auto</displayUnits>
+            <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
