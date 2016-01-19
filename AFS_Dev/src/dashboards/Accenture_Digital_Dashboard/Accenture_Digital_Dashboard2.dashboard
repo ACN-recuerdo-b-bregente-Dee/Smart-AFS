@@ -111,24 +111,19 @@
     <middleSection>
         <columnSize>Wide</columnSize>
         <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA1</column>
-            </chartSummary>
-            <componentType>Column</componentType>
+            <componentType>ColumnStacked</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Value__c</groupingColumn>
-            <header>Qualified Opportunities</header>
+            <header>Active Opportunities</header>
             <legendPosition>Bottom</legendPosition>
-            <report>Accenture_Digital_Reports/Pipeline_Opportunity_TCR_for_Digital</report>
+            <report>Accenture_Digital_Reports/All_Active_Opportunity_TCR_with_Digita</report>
             <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
+            <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <title>Opportunity TCR with Digital</title>
             <useReportChart>false</useReportChart>
