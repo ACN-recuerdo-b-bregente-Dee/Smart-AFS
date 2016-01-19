@@ -9,7 +9,7 @@
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>VisualforcePage</componentType>
-            <header>Qualified</header>
+            <header>Qualified Opportunities</header>
             <page>DigitalReportPipeline</page>
             <pageHeightInPixels>350</pageHeightInPixels>
         </components>
@@ -27,12 +27,13 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Attribute__c.Attribute_Type__c</groupingColumn>
-            <header>Qualified – Attribute TCR For Non-Digital</header>
+            <header>Qualified Opportunities</header>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Pipeline_Non_Digital</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Attribute TCR with Non-Digital</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -123,12 +124,13 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Attribute__c.Attribute_Value__c</groupingColumn>
-            <header>Qualified – Opportunity TCR for Digital</header>
+            <header>Qualified Opportunities</header>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Pipeline_Opportunity_TCR_for_Digital</report>
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Opportunity TCR with Digital</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -148,12 +150,13 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Attribute__c.Attribute_Type__c</groupingColumn>
-            <header>Qualified – Opportunity TCR For Non-Digital</header>
+            <header>Qualified Opportunities</header>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Pipeline_Non_Digital</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Opportunity TCR without Digital</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
