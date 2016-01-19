@@ -14,34 +14,35 @@
             <pageHeightInPixels>350</pageHeightInPixels>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>VisualforcePage</componentType>
-            <header>All Active</header>
-            <page>DigitalReportAllActive</page>
-            <pageHeightInPixels>300</pageHeightInPixels>
-        </components>
-        <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
                 <axisBinding>y</axisBinding>
-                <column>FORMULA1</column>
+                <column>FORMULA2</column>
             </chartSummary>
-            <componentType>Column</componentType>
+            <componentType>ColumnStacked</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Type__c</groupingColumn>
-            <header>Qualified Opportunities</header>
+            <groupingColumn>Attribute__c.Attribute_Value__c</groupingColumn>
+            <groupingColumn>Opportunity.Reporting_Status__c</groupingColumn>
+            <header>Active Opportunities</header>
             <legendPosition>Bottom</legendPosition>
-            <report>Accenture_Digital_Reports/Pipeline_Non_Digital</report>
+            <report>Accenture_Digital_Reports/All_Active_Opportunity_TCR_with_Digita</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Opportunity TCR without Digital</title>
+            <title>Accenture Digital TCR</title>
             <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>VisualforcePage</componentType>
+            <header>All Active</header>
+            <page>DigitalReportAllActive</page>
+            <pageHeightInPixels>300</pageHeightInPixels>
         </components>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -64,6 +65,29 @@
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <title>Attribute TCR with Non-Digital</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA1</column>
+            </chartSummary>
+            <componentType>Column</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>Attribute__c.Attribute_Type__c</groupingColumn>
+            <header>Qualified Opportunities</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Accenture_Digital_Reports/Pipeline_Non_Digital</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Opportunity TCR without Digital</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -139,30 +163,6 @@
             <header>Unqualified Opportunities</header>
             <page>DigitalReportUnqualified</page>
             <pageHeightInPixels>350</pageHeightInPixels>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA2</column>
-            </chartSummary>
-            <componentType>ColumnStacked</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Value__c</groupingColumn>
-            <groupingColumn>Opportunity.Reporting_Status__c</groupingColumn>
-            <header>Active Opportunities</header>
-            <legendPosition>Bottom</legendPosition>
-            <report>Accenture_Digital_Reports/All_Active_Opportunity_TCR_with_Digita</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Accenture Digital TCR</title>
-            <useReportChart>false</useReportChart>
         </components>
     </middleSection>
     <rightSection>
