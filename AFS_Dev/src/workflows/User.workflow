@@ -18,7 +18,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(ISCHANGED(   IsActive   ), $User.Alias  = &apos;RGarcia&apos;)</formula>
+        <formula>AND(OR(ISCHANGED(   IsActive   ), ISCHANGED(    Email    ), ISCHANGED( Username )), $User.Alias  = &apos;RGarcia&apos;)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>
