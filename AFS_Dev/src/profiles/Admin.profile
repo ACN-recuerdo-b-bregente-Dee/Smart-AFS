@@ -144,6 +144,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DigitalReportUnqualifiedController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DigitalReportWonYTDController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -3634,6 +3638,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>DigitalReportPipeline</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>DigitalReportUnqualified</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
