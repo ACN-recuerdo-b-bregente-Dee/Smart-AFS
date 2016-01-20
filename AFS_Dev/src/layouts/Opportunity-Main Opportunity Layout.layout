@@ -128,6 +128,10 @@
                 <behavior>Edit</behavior>
                 <field>Industry_Sub_Segment__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Digital_Attribute_Count__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

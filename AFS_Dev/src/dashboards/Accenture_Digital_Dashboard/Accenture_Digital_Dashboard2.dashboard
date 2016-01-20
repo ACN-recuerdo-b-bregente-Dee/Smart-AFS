@@ -180,7 +180,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>BucketField_71456478</groupingColumn>
+            <groupingColumn>Opportunity.Attributes__r$Attribute_Type__c</groupingColumn>
             <groupingColumn>Opportunity$Portfolio__c</groupingColumn>
             <header>Active Opportunities</header>
             <legendPosition>Bottom</legendPosition>
@@ -192,7 +192,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>lhea.c.j.valencia@accenturefederal.com.smart</runningUser>
+    <runningUser>dashboard.user@accenturefederal.com</runningUser>
     <textColor>#000000</textColor>
     <title>Accenture Digital Dashboard</title>
     <titleColor>#000000</titleColor>

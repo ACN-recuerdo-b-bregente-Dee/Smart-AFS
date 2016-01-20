@@ -585,6 +585,11 @@
             <field>The_Opportunity_involves_activities_now__c</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Digital_Attribute_Count__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>Opportunities</masterLabel>
     </sections>
 </ReportType>
