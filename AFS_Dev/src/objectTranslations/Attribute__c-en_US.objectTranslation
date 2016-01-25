@@ -172,6 +172,10 @@
             <translation><!-- Analytics --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Application Modernization</masterLabel>
+            <translation><!-- Application Modernization --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>BMC</masterLabel>
             <translation><!-- BMC --></translation>
         </picklistValues>

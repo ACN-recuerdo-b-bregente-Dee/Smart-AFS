@@ -1045,6 +1045,10 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
                 <controllingFieldValues>Alliance</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>Application Modernization</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackHistory>true</trackHistory>
