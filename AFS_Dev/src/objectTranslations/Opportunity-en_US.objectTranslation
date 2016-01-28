@@ -763,6 +763,22 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- DB Competitor --></label>
+        <name>DB_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation><!-- Competitor A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation><!-- Competitor B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation><!-- Competitor C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Contract Management Review Date --></label>
         <name>Date_of_Contract_Management_Review_Date__c</name>
     </fields>

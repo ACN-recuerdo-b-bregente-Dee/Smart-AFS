@@ -1092,6 +1092,29 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>DB_Competitor__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field.</description>
+        <externalId>false</externalId>
+        <label>DB Competitor</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Competitor A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Date_of_Contract_Management_Review_Date__c</fullName>
         <externalId>false</externalId>
         <label>Contract Management Review Date</label>

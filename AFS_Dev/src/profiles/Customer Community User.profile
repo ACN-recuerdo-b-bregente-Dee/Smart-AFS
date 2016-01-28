@@ -298,6 +298,26 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>AT_Adoption_Trend__c.Editing_User__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AT_Adoption_Trend__c.Object__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AT_Adoption_Trend__c.Record_Count__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AT_Adoption_Trend__c.Snapshot_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -754,6 +774,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Campaign.BudgetedCost</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.DB_Campaign_Tactic__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1228,6 +1253,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Event.DB_Activity_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Description</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1349,6 +1379,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.AnnualRevenue</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.DB_Created_Date_without_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.DB_Lead_Age__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1604,6 +1644,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Contract_Vehicle__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.DB_Competitor__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3148,6 +3193,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Task.DB_Activity_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Task.Description</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3186,8 +3236,21 @@
         <field>Task.test_box__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.DB_Region__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.User_Unique__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>AFS_Relationship__c-AFS Contact Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AT_Adoption_Trend__c-Adoption Trend Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
