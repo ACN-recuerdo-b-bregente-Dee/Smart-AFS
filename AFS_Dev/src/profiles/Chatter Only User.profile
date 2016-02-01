@@ -148,6 +148,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DigitalReportUnqualifiedControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DigitalReportWonYTDController</apexClass>
         <enabled>false</enabled>
     </classAccesses>

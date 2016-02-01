@@ -130,6 +130,7 @@ public class DigitalReportUnqualifiedController {
     }
     }
     
+    /*
     public PageReference getReport() {
         allOpportunities = new Map<Id, Opportunity>([
         SELECT Id, Total_Current_Revenue__c FROM Opportunity WHERE  Reporting_Status__c = 'Unqualified'  
@@ -305,6 +306,7 @@ public class DigitalReportUnqualifiedController {
         return null;
     }
     
+    */
     public pagereference goToReport(){
         PageReference pageRef = new PageReference('/00OJ0000000POAa');
         pageRef.setRedirect(true);
