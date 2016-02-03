@@ -1,13 +1,13 @@
 /**
- * Class Name: DigitalReportUnqualifiedControllerTest
+ * Class Name: DigitalReportPipelineControllerTest
  * @author: Lhea Valencia
  * Date: 04/17/2015
- * Test Class for DigitalReportUnqualifiedController
+ * Test Class for DigitalReportPipelineController
  */
 @isTest(SeeAllData=false)
-public class DigitalReportUnqualifiedControllerTest {
+public class DigitalReportPipelineControllerTest {
 
-static testMethod void testDigitalReportUnqualified() {
+static testMethod void testReportPipeline() {
 
     //Id opportunityId = null;
     //Id accountId = null;
@@ -49,8 +49,8 @@ static testMethod void testDigitalReportUnqualified() {
         //accountid = testAcc.id;
 
         //List<Pricebook2> standardPb = [select id, name, isActive from Pricebook2 where IsStandard = true limit 1];
-		//List<Pricebook2> standardPb = new List<Pricebook2>();        
-    	//standardPb = [select id, name, isActive from Pricebook2 where IsStandard = true limit 1];
+        //List<Pricebook2> standardPb = new List<Pricebook2>();        
+        //standardPb = [select id, name, isActive from Pricebook2 where IsStandard = true limit 1];
         /*
         * - Test PriceBook
         */  
@@ -132,7 +132,24 @@ static testMethod void testDigitalReportUnqualified() {
         testOpp.Sales_Committed_for_First_Year__c = 2344;
         database.insert(testOpp,true);
         
-        
+        testOpp.STATUS_STAGE_REQUESTED__C = '1A';
+        testOpp.Best_Probable_Worst__c = 'Probable Win';
+        testOpp.Client_Industry_Area_of_Service__c = 'None Apply';
+        testOpp.Complexity_Category__c = 'CB: Cross border client contract';
+        testOpp.Export_Transfer_of_Products_Software__c  = 'No';
+        testOpp.Hierarchy_Level__c = 'Contract Vehicle';
+        testOpp.Industry_Sub_Segment__c  = 'D&PS OTHER';
+        testOpp.ONCONUS_Work_Required__c  = 'Yes';
+        testOpp.Primary_Function__c  = 'Business Process Outsourcing';
+        testOpp.Is_AFS_Prime_or_Subcontractor__c = 'Prime';
+        testOpp.Proposal_Submission_Date__c = System.today() + 10;
+        testOpp.RFP_Release_Date__c = System.today() + 5;
+        testOpp.The_Opportunity_involves_activities_now__c = 'No';
+        testOpp.Subject_countries_client_operates__c = 'None Apply';
+        testOpp.Win_Probability__c = '50';
+    	
+    	database.update(testOpp, true);
+    
         Opportunity_Team_Roles__c testOppTR = new Opportunity_Team_Roles__c();
         testOppTR.Opportunity_Name__c = testOpp.Id;
         testOppTR.Name__c = testPerson.id;
@@ -218,10 +235,10 @@ static testMethod void testDigitalReportUnqualified() {
         
         Test.startTest();
     
-        PageReference pageRef = Page.DigitalReportUnqualified;
+        PageReference pageRef = Page.DigitalReportPipeline;
         Test.setCurrentPage(pageRef);
         
-        DigitalReportUnqualifiedController controller = new DigitalReportUnqualifiedController();
+        DigitalReportPipelineController controller = new DigitalReportPipelineController();
         //List <chartData> testMyChartData = controller.getChartData();
         //List <chartData> testMyChartData = controller.getData();
         //Data[] testMyChartData = controller.getChartData();       

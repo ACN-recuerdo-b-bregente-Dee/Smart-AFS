@@ -1,13 +1,13 @@
 /**
- * Class Name: DigitalReportUnqualifiedControllerTest
+ * Class Name: DigitalReportPipelineControllerTest
  * @author: Lhea Valencia
  * Date: 04/17/2015
- * Test Class for DigitalReportUnqualifiedController
+ * Test Class for DigitalReportPipelineController
  */
 @isTest(SeeAllData=false)
-public class DigitalReportUnqualifiedControllerTest {
+public class DigitalReportPipelineControllerTest2 {
 
-static testMethod void testDigitalReportUnqualified() {
+static testMethod void testReportPipeline() {
 
     //Id opportunityId = null;
     //Id accountId = null;
@@ -49,8 +49,8 @@ static testMethod void testDigitalReportUnqualified() {
         //accountid = testAcc.id;
 
         //List<Pricebook2> standardPb = [select id, name, isActive from Pricebook2 where IsStandard = true limit 1];
-		//List<Pricebook2> standardPb = new List<Pricebook2>();        
-    	//standardPb = [select id, name, isActive from Pricebook2 where IsStandard = true limit 1];
+        //List<Pricebook2> standardPb = new List<Pricebook2>();        
+        //standardPb = [select id, name, isActive from Pricebook2 where IsStandard = true limit 1];
         /*
         * - Test PriceBook
         */  
@@ -218,10 +218,10 @@ static testMethod void testDigitalReportUnqualified() {
         
         Test.startTest();
     
-        PageReference pageRef = Page.DigitalReportUnqualified;
+        PageReference pageRef = Page.DigitalReportPipeline;
         Test.setCurrentPage(pageRef);
         
-        DigitalReportUnqualifiedController controller = new DigitalReportUnqualifiedController();
+        DigitalReportPipelineController controller = new DigitalReportPipelineController();
         //List <chartData> testMyChartData = controller.getChartData();
         //List <chartData> testMyChartData = controller.getData();
         //Data[] testMyChartData = controller.getChartData();       

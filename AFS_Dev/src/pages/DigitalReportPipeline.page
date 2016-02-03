@@ -1,4 +1,4 @@
-<apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false">
+<apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false" action="{!prepareVFPageData}">
     <apex:form >
     <apex:outputLabel for="title" value="Overall TCR: " style="font-weight:700"  /> 
     <apex:outputText id="title" value="{0, number, $0,000}"  >
@@ -13,7 +13,7 @@
         <apex:param value="{!chartData[0].accDigitalTotalCurrency}" />
     </apex:outputText>
     <br/><br/>
-        <apex:commandButton value="Go to Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev.cs10.my.salesforce.com/00OJ0000000PPA7');"/>&nbsp;&nbsp;
+        <apex:commandButton value="Go to Report" onclick="window.open('{!reportUrl}');"/>&nbsp;&nbsp;
        
         <!--
         <apex:commandButton value="VF Report" action="{!goToReport}" oncomplete="window.open('https://smartafs--dev--c.cs10.visual.force.com/apex/PipelineReport');"/>&nbsp;&nbsp;
@@ -29,7 +29,7 @@
         </apex:chart>
     </apex:form>  
     
-<script>
+<script type="text/javascript">
 function renderChartTip(klass, item) {
     var m = item.storeItem;
     this.setTitle(m.get('name'));

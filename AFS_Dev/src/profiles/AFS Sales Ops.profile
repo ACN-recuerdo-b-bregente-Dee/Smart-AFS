@@ -144,6 +144,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DigitalReportPipelineControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DigitalReportPipelineControllerTest2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DigitalReportUnqualifiedController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -208,6 +216,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PipelineReportController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ProductBL</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -250,6 +262,10 @@
     <classAccesses>
         <apexClass>UTIL_Constants</apexClass>
         <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>UnqualifiedReportController</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>UpdateAccountBatch</apexClass>

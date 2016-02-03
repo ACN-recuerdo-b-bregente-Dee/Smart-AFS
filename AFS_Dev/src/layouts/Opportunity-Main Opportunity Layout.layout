@@ -771,12 +771,12 @@
         <fields>Attribute_Value__c</fields>
         <fields>AttributePercent__c</fields>
         <fields>Attribute_TCR__c</fields>
+        <fields>Accenture_Digital_TCR__c</fields>
         <fields>Attribute_TDP__c</fields>
         <fields>WTD_TCR__c</fields>
         <fields>WTD_TDP__c</fields>
         <fields>WTD_TCR_Decimals__c</fields>
         <fields>Digital_TCR__c</fields>
-        <fields>Attribute_Type_Digital_or_Not__c</fields>
         <relatedList>Attribute__c.Opportunity_Name__c</relatedList>
     </relatedLists>
     <relatedLists>

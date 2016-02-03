@@ -1,4 +1,4 @@
-<apex:page controller="DigitalReportPipelineController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false" action="{!getReports}">
+<apex:page controller="PipelineReportController" showHeader="false" showChat="false" standardStylesheets="true" sidebar="false" action="{!getReports}" >
     <apex:sectionHeader title="Opportunity" subtitle="Digital and Non-Digital Report"/>
     
     <apex:form >
