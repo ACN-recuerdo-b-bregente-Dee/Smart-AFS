@@ -38,13 +38,6 @@
             <useReportChart>false</useReportChart>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>VisualforcePage</componentType>
-            <header>All Active</header>
-            <page>DigitalReportAllActive</page>
-            <pageHeightInPixels>300</pageHeightInPixels>
-        </components>
-        <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
@@ -89,35 +82,6 @@
             <sortBy>RowLabelAscending</sortBy>
             <title>Opportunity TCR without Digital</title>
             <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA1</column>
-            </chartSummary>
-            <componentType>Pie</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Type_Digital_or_Not__c</groupingColumn>
-            <header>Pipeline - OOB</header>
-            <legendPosition>Bottom</legendPosition>
-            <report>Accenture_Digital_Reports/Accenture_Digital_Pipeline</report>
-            <showPercentage>true</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>VisualforcePage</componentType>
-            <header>Won YTD</header>
-            <page>DigitalReportWonYTD</page>
-            <pageHeightInPixels>300</pageHeightInPixels>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>

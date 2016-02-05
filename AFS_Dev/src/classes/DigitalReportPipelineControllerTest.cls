@@ -118,7 +118,7 @@ static testMethod void testReportPipeline() {
         testOpp.RFP_RELEASE_DATE__C = System.today() + 3;
         testOpp.CLOSEDATE = System.today() + 115; 
         testOpp.REPORTING_STATUS_SINCE__C = System.today() - 30; 
-        testOpp.TYPE = 'Competitive';
+        testOpp.Type = 'Competitive';
         testOpp.STAGENAME = '0';
         testOpp.APPROVED_STATUS_STAGE__C = '0';
         testOpp.REPORTING_STATUS__C = 'Unqualified';
@@ -126,29 +126,11 @@ static testMethod void testReportPipeline() {
         testOpp.Consulting_End__c = System.today() + 210;   
         testOpp.Outsourcing_Start__c = System.today() + 150; 
         testOpp.Outsourcing_End__c  = System.today() + 240; 
-        testOpp.Hierarchy_Level__c = 'Standalone';
+        testOpp.Hierarchy_Level__c = 'Contract Vehicle';
         testOpp.Probability = 0.1;
         testOpp.PoC_Responsible__c = testPerson.id;
         testOpp.Sales_Committed_for_First_Year__c = 2344;
         database.insert(testOpp,true);
-        
-        testOpp.STATUS_STAGE_REQUESTED__C = '1A';
-        testOpp.Best_Probable_Worst__c = 'Probable Win';
-        testOpp.Client_Industry_Area_of_Service__c = 'None Apply';
-        testOpp.Complexity_Category__c = 'CB: Cross border client contract';
-        testOpp.Export_Transfer_of_Products_Software__c  = 'No';
-        testOpp.Hierarchy_Level__c = 'Contract Vehicle';
-        testOpp.Industry_Sub_Segment__c  = 'D&PS OTHER';
-        testOpp.ONCONUS_Work_Required__c  = 'Yes';
-        testOpp.Primary_Function__c  = 'Business Process Outsourcing';
-        testOpp.Is_AFS_Prime_or_Subcontractor__c = 'Prime';
-        testOpp.Proposal_Submission_Date__c = System.today() + 10;
-        testOpp.RFP_Release_Date__c = System.today() + 5;
-        testOpp.The_Opportunity_involves_activities_now__c = 'No';
-        testOpp.Subject_countries_client_operates__c = 'None Apply';
-        testOpp.Win_Probability__c = '50';
-    	
-    	database.update(testOpp, true);
     
         Opportunity_Team_Roles__c testOppTR = new Opportunity_Team_Roles__c();
         testOppTR.Opportunity_Name__c = testOpp.Id;
@@ -165,7 +147,29 @@ static testMethod void testReportPipeline() {
         testOppTR2.Opportunity_Access__c = 'Read Only';
         testOppTR.Sales_Credit__c= 0;
         database.insert(testOppTR2,True);        
+
+        testOpp.STATUS_STAGE_REQUESTED__C = '1A';
+        testOpp.Best_Probable_Worst__c = 'Probable Win';
+        testOpp.Client_Industry_Area_of_Service__c = 'None Apply';
+        testOpp.Complexity_Category__c = 'CB: Cross border client contract';
+        testOpp.Export_Transfer_of_Products_Software__c  = 'No';
+        testOpp.Hierarchy_Level__c = 'Contract Vehicle';
+        testOpp.Industry_Sub_Segment__c  = 'D&PS OTHER';
+        testOpp.ONCONUS_Work_Required__c  = 'Yes';
+        testOpp.Primary_Function__c  = 'Business Process Outsourcing';
+        testOpp.Is_AFS_Prime_or_Subcontractor__c = 'Prime';
+        testOpp.Proposal_Submission_Date__c = System.today() + 10;
+        testOpp.RFP_Release_Date__c = System.today() + 5;
+        testOpp.The_Opportunity_involves_activities_now__c = 'No';
+        testOpp.Subject_countries_client_operates__c = 'None Apply';
+        testOpp.Win_Probability__c = '50';
+        testOpp.Approved_Status_Stage__c= '1A';
+    	testOpp.Reporting_Status__c = 'Qualified';
         
+        database.update(testOpp, true);    
+    	System.debug('<<<<value of udpated testOpp approved Status>>>' + testOpp.Approved_Status_Stage__c);
+    	System.debug('<<<<value of udpated testOpp reporting status>>>' + testOpp.Reporting_Status__c);
+    
         Opportunity testOpp1 = new Opportunity();
         testOpp1.id = testOpp.Id;
         testOpp.Source__c = 'Salesforce';
