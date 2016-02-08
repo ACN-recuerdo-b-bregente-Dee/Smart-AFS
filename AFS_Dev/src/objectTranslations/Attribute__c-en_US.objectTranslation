@@ -9,14 +9,6 @@
         <value>Attributes</value>
     </caseValues>
     <fields>
-        <label><!-- Accenture Digital TCR --></label>
-        <name>Accenture_Digital_TCR__c</name>
-    </fields>
-    <fields>
-        <label><!-- All TCR excpt ACN Dig --></label>
-        <name>All_TCR_excpt_ACN_Dig__c</name>
-    </fields>
-    <fields>
         <label><!-- Attribute % --></label>
         <name>AttributePercent__c</name>
     </fields>
@@ -745,21 +737,9 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Digital TCR --></label>
-        <name>Digital_TCR__c</name>
-    </fields>
-    <fields>
         <label><!-- Opportunity Name --></label>
         <name>Opportunity_Name__c</name>
         <relationshipLabel><!-- Attributes --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- TCR Type --></label>
-        <name>TCR_Type__c</name>
-    </fields>
-    <fields>
-        <label><!-- TCR --></label>
-        <name>TCR__c</name>
     </fields>
     <fields>
         <label><!-- WTD TCR Decimals --></label>

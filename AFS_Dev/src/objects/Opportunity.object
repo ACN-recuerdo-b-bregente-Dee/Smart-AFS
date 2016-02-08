@@ -133,21 +133,6 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
-        <fullName>Accenture_Digital_TCR__c</fullName>
-        <externalId>false</externalId>
-        <label>Accenture Digital TCR</label>
-        <summarizedField>Attribute__c.Digital_TCR__c</summarizedField>
-        <summaryFilterItems>
-            <field>Attribute__c.Attribute_Type__c</field>
-            <operation>equals</operation>
-            <value>Accenture Digital</value>
-        </summaryFilterItems>
-        <summaryForeignKey>Attribute__c.Opportunity_Name__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <type>Summary</type>
-    </fields>
-    <fields>
         <fullName>Accenture_Digital__c</fullName>
         <externalId>false</externalId>
         <label>Accenture Digital?</label>
@@ -1259,43 +1244,6 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
         <type>Summary</type>
     </fields>
     <fields>
-        <fullName>Digital_TCR_Currency__c</fullName>
-        <externalId>false</externalId>
-        <label>Digital TCR</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Digital_TCR_Percent__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( Total_Current_Revenue__c = 0, 0, (Digital_TCR__c / Total_Current_Revenue__c  ))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Digital TCR %</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Digital_TCR__c</fullName>
-        <externalId>false</externalId>
-        <label>Digital TCR</label>
-        <summarizedField>Attribute__c.Digital_TCR__c</summarizedField>
-        <summaryFilterItems>
-            <field>Attribute__c.Attribute_Type__c</field>
-            <operation>equals</operation>
-            <value>Accenture Digital</value>
-        </summaryFilterItems>
-        <summaryForeignKey>Attribute__c.Opportunity_Name__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <type>Summary</type>
-    </fields>
-    <fields>
         <fullName>Draft_RFP_Release_Date__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Anticipated release date of the Draft RFP. This date field may be equal to or before the &quot;RFP Release&quot; date field.</inlineHelpText>
@@ -1795,7 +1743,7 @@ No is not an acceptable answer. Please review the MFC Decision Matrix link in th
     <fields>
         <fullName>Non_Digital_TCR__c</fullName>
         <externalId>false</externalId>
-        <formula>Total_Current_Revenue__c -  Digital_TCR__c</formula>
+        <formula>1</formula>
         <label>Non Digital TCR</label>
         <precision>18</precision>
         <required>false</required>
@@ -1860,16 +1808,6 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Opp_Year__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( (MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()) - 1)  || (MONTH(CloseDate) &gt;=1 &amp;&amp; MONTH(CloseDate) &lt;=8) &amp;&amp; YEAR(CloseDate) = YEAR(Today())  , &quot;Current&quot;, IF( MONTH(CloseDate) &gt;=9 &amp;&amp; YEAR( CloseDate ) = YEAR(TODAY()) || MONTH(CloseDate) &lt;=8 &amp;&amp; YEAR(CloseDate) = YEAR(TODAY()) + 1, &quot;Next&quot;,&quot;&quot;))</formula>
-        <label>Opp Year</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Opportunity_Auto_Id__c</fullName>
@@ -2948,18 +2886,6 @@ For example:
         <summaryOperation>max</summaryOperation>
         <trackHistory>false</trackHistory>
         <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>TCR_for_Dashboard__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(  Attribute_Type_Digital_or_Not__c  == &apos;Digital&apos;,  Digital_TCR__c  , IF(  Non_Digital_Attribute__c  &gt; 1, Non_Digital_TCR__c/ Non_Digital_Attribute__c , Non_Digital_TCR__c) )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>TCR for Dashboard</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>TDP__c</fullName>

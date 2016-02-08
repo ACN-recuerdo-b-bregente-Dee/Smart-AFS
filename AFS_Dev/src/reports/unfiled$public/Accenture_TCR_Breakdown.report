@@ -33,9 +33,6 @@
         <field>Opportunity$Name</field>
     </columns>
     <columns>
-        <field>Opportunity.Attributes__r$Accenture_Digital_TCR__c</field>
-    </columns>
-    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.Attributes__r$Attribute_TCR__c</field>
     </columns>

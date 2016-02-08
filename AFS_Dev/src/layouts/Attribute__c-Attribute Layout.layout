@@ -45,14 +45,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Accenture_Digital_TCR__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Digital_TCR__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
                 <field>Attribute_Type_Digital_or_Not__c</field>
             </layoutItems>
         </layoutColumns>

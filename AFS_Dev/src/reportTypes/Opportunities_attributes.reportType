@@ -26,11 +26,6 @@
             <table>Opportunity</table>
         </columns>
         <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Accenture_Digital_TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
             <table>Opportunity</table>
@@ -72,11 +67,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>TCR_for_Dashboard__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>TotalOpportunityQuantity</field>
             <table>Opportunity</table>
         </columns>
@@ -97,11 +87,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>All_TCR_excpt_ACN_Dig__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>NextStep</field>
             <table>Opportunity</table>
         </columns>
@@ -109,11 +94,6 @@
             <checkedByDefault>false</checkedByDefault>
             <field>LeadSource</field>
             <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR_Type__c</field>
-            <table>Opportunity.Attributes__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -177,11 +157,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Id</field>
             <table>Opportunity.Attributes__r</table>
         </columns>
@@ -194,11 +169,6 @@
             <checkedByDefault>false</checkedByDefault>
             <field>Owner</field>
             <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>

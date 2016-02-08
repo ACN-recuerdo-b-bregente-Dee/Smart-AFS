@@ -7,9 +7,6 @@
         <field>Opportunity.Total_Current_Revenue__c</field>
     </columns>
     <columns>
-        <field>Attribute__c.Accenture_Digital_TCR__c</field>
-    </columns>
-    <columns>
         <field>Attribute__c.AttributePercent__c</field>
     </columns>
     <format>Summary</format>

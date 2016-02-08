@@ -112,14 +112,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>AttributeHandler</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>AttributeSummary</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>CalculateFinancialSummaryBL</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -688,31 +680,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Attribute_Summary__c.Attribute_Type_Digital_or_Non_digital__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Attribute_Summary__c.Opportunity__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Attribute_Summary__c.Summary_Level__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Attribute__c.Accenture_Digital_TCR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Attribute__c.All_TCR_excpt_ACN_Dig__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Attribute__c.AttributePercent__c</field>
         <readable>true</readable>
@@ -755,21 +722,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Attribute__c.Attribute_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Attribute__c.Digital_TCR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Attribute__c.TCR_Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Attribute__c.TCR__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1503,11 +1455,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Accenture_Digital_TCR__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Accenture_Digital__c</field>
         <readable>true</readable>
@@ -1704,21 +1651,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Digital_TCR_Currency__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Digital_TCR_Percent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Digital_TCR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.Draft_RFP_Release_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1830,7 +1762,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Non_Digital_Attribute__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1855,11 +1787,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.OSP_Notes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Opp_Year__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2190,11 +2117,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.TCR_OI__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.TCR_for_Dashboard__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3304,9 +3226,6 @@
         <layout>Asset-Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Attribute_Summary__c-Attribute Summary Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Attribute__c-Attribute Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3469,15 +3388,6 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Asset</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Attribute_Summary__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

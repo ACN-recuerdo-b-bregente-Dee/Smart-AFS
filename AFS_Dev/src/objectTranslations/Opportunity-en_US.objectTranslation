@@ -43,10 +43,6 @@
         <name>ATS_Notes__c</name>
     </fields>
     <fields>
-        <label><!-- Accenture Digital TCR --></label>
-        <name>Accenture_Digital_TCR__c</name>
-    </fields>
-    <fields>
         <label><!-- Accenture Digital? --></label>
         <name>Accenture_Digital__c</name>
         <picklistValues>
@@ -890,18 +886,6 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         <name>Digital_Attribute_Count__c</name>
     </fields>
     <fields>
-        <label><!-- Digital TCR --></label>
-        <name>Digital_TCR_Currency__c</name>
-    </fields>
-    <fields>
-        <label><!-- Digital TCR % --></label>
-        <name>Digital_TCR_Percent__c</name>
-    </fields>
-    <fields>
-        <label><!-- Digital TCR --></label>
-        <name>Digital_TCR__c</name>
-    </fields>
-    <fields>
         <help><!-- Anticipated release date of the Draft RFP. This date field may be equal to or before the &quot;RFP Release&quot; date field. --></help>
         <label><!-- Draft RFP Release Date --></label>
         <name>Draft_RFP_Release_Date__c</name>
@@ -1251,10 +1235,6 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
         <help><!-- Read only field to all users except OSPs. Notes field for the OSPs to leverage when adding comments to the opportunity --></help>
         <label><!-- OSP Notes --></label>
         <name>OSP_Notes__c</name>
-    </fields>
-    <fields>
-        <label><!-- Opp Year --></label>
-        <name>Opp_Year__c</name>
     </fields>
     <fields>
         <help><!-- Number that is system-generated when a new opportunity is created. Opportunity ID field is read-only. --></help>
@@ -1874,10 +1854,6 @@ For example:
         <help><!-- This formula field is a blended target OI% based on service group OI values and target OI%. --></help>
         <label><!-- TCR OI% --></label>
         <name>TCR_OI__c</name>
-    </fields>
-    <fields>
-        <label><!-- TCR for Dashboard --></label>
-        <name>TCR_for_Dashboard__c</name>
     </fields>
     <fields>
         <help><!-- OI% over life of contract (including options) --></help>

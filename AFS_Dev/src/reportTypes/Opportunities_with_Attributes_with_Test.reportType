@@ -822,11 +822,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Accenture_Digital_TCR__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Stage__c</field>
             <table>Opportunity</table>
         </columns>
@@ -857,21 +852,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR_Currency__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR_Percent__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Non_Digital_TCR__c</field>
             <table>Opportunity</table>
         </columns>
@@ -898,11 +878,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Attribute_Type_Digital_or_Not__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR_for_Dashboard__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>
@@ -1000,32 +975,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Accenture_Digital_TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>All_TCR_excpt_ACN_Dig__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR_Type__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Attribute_Type_Digital_or_Not__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR__c</field>
             <table>Opportunity.Attributes__r</table>
         </columns>
         <masterLabel>Attributes</masterLabel>

@@ -22,11 +22,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Accenture_Digital_TCR__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account</field>
             <table>Opportunity</table>
         </columns>
@@ -228,21 +223,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Description</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR_Currency__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR_Percent__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -895,16 +875,6 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Accenture_Digital_TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>All_TCR_excpt_ACN_Dig__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>AttributePercent__c</field>
             <table>Opportunity.Attributes__r</table>
         </columns>
@@ -980,11 +950,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>LastActivityDate</field>
             <table>Opportunity.Attributes__r</table>
         </columns>
@@ -996,16 +961,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR_Type__c</field>
             <table>Opportunity.Attributes__r</table>
         </columns>
         <columns>

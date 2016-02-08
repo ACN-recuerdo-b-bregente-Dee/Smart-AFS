@@ -26,7 +26,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
-            <groupingColumn>Opportunity.Attribute_Summary__r$Name</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Pipeline_Digital_vs_Non_Digital</report>
             <showPercentage>true</showPercentage>
@@ -58,7 +57,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
-            <groupingColumn>Opportunity.Attribute_Summary__r$Name</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Won_YTD_Digital_vs_Non_digital</report>
             <showPercentage>true</showPercentage>
@@ -90,7 +88,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Opportunity.Attribute_Summary__r$Name</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/All_Active_Digital_vs_Non_Digital</report>
             <showPercentage>true</showPercentage>

@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
-    <aggregates>
-        <calculatedFormula>ROUND(IF(Attribute__c.TCR__c:SUM&gt;0, Attribute__c.TCR__c:SUM, 1), 0)</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA1</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>TCR</masterLabel>
-        <scale>2</scale>
-    </aggregates>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Attribute__c.Attribute_TCR__c</field>
-    </columns>
-    <columns>
-        <field>Attribute__c.TCR__c</field>
     </columns>
     <columns>
         <field>Attribute__c.Attribute_Type__c</field>

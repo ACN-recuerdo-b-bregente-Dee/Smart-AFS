@@ -4,10 +4,6 @@
     <category>opportunities</category>
     <deployed>true</deployed>
     <description>Opportunities may or may not have Attribute Summary</description>
-    <join>
-        <outerJoin>false</outerJoin>
-        <relationship>Attribute_Summary__r</relationship>
-    </join>
     <label>Opportunities and Attribute Summary</label>
     <sections>
         <columns>
@@ -822,11 +818,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Accenture_Digital_TCR__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Stage__c</field>
             <table>Opportunity</table>
         </columns>
@@ -853,21 +844,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Stage_3_Offline_sent__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR_Currency__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Digital_TCR_Percent__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -900,64 +876,6 @@
             <field>Attribute_Type_Digital_or_Not__c</field>
             <table>Opportunity</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TCR_for_Dashboard__c</field>
-            <table>Opportunity</table>
-        </columns>
         <masterLabel>Opportunities</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Owner</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedBy</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Summary_Level__c</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Attribute_TCR__c</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Attribute_Type_Digital_or_Non_digital__c</field>
-            <table>Opportunity.Attribute_Summary__r</table>
-        </columns>
-        <masterLabel>Attribute Summary</masterLabel>
     </sections>
 </ReportType>
