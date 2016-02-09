@@ -30,11 +30,6 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Attribute__c.Attribute_Type_Digital_or_Not__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Accenture Digital - Won YTD</name>
     <params>
         <name>terr</name>

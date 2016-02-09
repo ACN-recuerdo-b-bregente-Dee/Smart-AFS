@@ -33,10 +33,6 @@
         <name>Attribute_TypeName__c</name>
     </fields>
     <fields>
-        <label><!-- Attribute Type(Digital or Not) --></label>
-        <name>Attribute_Type_Digital_or_Not__c</name>
-    </fields>
-    <fields>
         <label><!-- Attribute Type --></label>
         <name>Attribute_Type__c</name>
         <picklistValues>

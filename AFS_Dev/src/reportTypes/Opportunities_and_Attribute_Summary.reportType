@@ -863,11 +863,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Non_Digital_Attribute__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Digital_Attribute_Count__c</field>
             <table>Opportunity</table>
         </columns>

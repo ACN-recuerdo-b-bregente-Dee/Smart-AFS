@@ -14,9 +14,6 @@
         <field>Opportunity.Non_Digital_TCR_Percent__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Non_Digital_Attribute__c</field>
-    </columns>
-    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.Non_Digital_TCR__c</field>
     </columns>

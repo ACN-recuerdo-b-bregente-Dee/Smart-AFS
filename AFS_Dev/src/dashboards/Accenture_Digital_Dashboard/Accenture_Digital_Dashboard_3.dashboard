@@ -19,7 +19,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Type_Digital_or_Not__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Accenture_Digital_Pipeline</report>
             <showPercentage>true</showPercentage>
@@ -67,7 +66,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Type_Digital_or_Not__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Accenture_Digital_Won_YTD</report>
             <showPercentage>true</showPercentage>
@@ -92,7 +90,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Type_Digital_or_Not__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Accenture_Digital_All_Active</report>
             <showPercentage>true</showPercentage>

@@ -240,11 +240,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Attribute_Type_Digital_or_Not__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
             <table>Opportunity.Attributes__r</table>
         </columns>

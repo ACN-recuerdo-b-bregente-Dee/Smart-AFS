@@ -709,11 +709,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Attribute__c.Attribute_Type_Digital_or_Not__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Attribute__c.Attribute_Type__c</field>
         <readable>true</readable>
@@ -1760,11 +1755,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Non_Digital_Attribute__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.Non_Digital_TCR_Percent__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1787,6 +1777,11 @@
         <editable>true</editable>
         <field>Opportunity.OSP_Notes__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Opp_FY__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

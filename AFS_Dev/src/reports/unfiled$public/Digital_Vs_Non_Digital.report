@@ -9,32 +9,6 @@
         <masterLabel>Total TCR</masterLabel>
         <scale>2</scale>
     </aggregates>
-    <chart>
-        <backgroundColor1>#FFFFFF</backgroundColor1>
-        <backgroundColor2>#FFFFFF</backgroundColor2>
-        <backgroundFadeDir>Diagonal</backgroundFadeDir>
-        <chartSummaries>
-            <aggregate>Sum</aggregate>
-            <axisBinding>y</axisBinding>
-            <column>Attribute__c.Attribute_TCR__c</column>
-        </chartSummaries>
-        <chartType>Pie</chartType>
-        <enableHoverLabels>false</enableHoverLabels>
-        <expandOthers>false</expandOthers>
-        <groupingColumn>Attribute__c.Attribute_Type_Digital_or_Not__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
-        <location>CHART_TOP</location>
-        <showAxisLabels>true</showAxisLabels>
-        <showPercentage>true</showPercentage>
-        <showTotal>false</showTotal>
-        <showValues>true</showValues>
-        <size>Medium</size>
-        <summaryAxisRange>Auto</summaryAxisRange>
-        <textColor>#000000</textColor>
-        <textSize>12</textSize>
-        <titleColor>#000000</titleColor>
-        <titleSize>18</titleSize>
-    </chart>
     <columns>
         <field>OPPORTUNITY_NAME</field>
     </columns>
@@ -63,11 +37,6 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Attribute__c.Attribute_Type_Digital_or_Not__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Digital Vs Non Digital</name>
     <params>
         <name>terr</name>

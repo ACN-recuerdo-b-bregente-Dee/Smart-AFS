@@ -115,7 +115,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Type_Digital_or_Not__c</groupingColumn>
             <header>Attribute Type (digital vs not) - Qualified</header>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Attribute_POC_v2_test</report>

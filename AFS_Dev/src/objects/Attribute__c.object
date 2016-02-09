@@ -135,18 +135,6 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Attribute_Type_Digital_or_Not__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( ISPICKVAL( Attribute_Type__c , &quot;Accenture Digital&quot;) , &quot;Digital&quot;, &quot;Non Digital&quot;)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Attribute Type(Digital or Not)</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Attribute_Type__c</fullName>
         <externalId>false</externalId>
         <label>Attribute Type</label>
@@ -429,6 +417,7 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
             <picklistValues>
                 <fullName>Digital Content Management</fullName>
                 <controllingFieldValues>ADMIN:Digital Customer</controllingFieldValues>
+                <controllingFieldValues>ADMIN:Digital Enterprise</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>

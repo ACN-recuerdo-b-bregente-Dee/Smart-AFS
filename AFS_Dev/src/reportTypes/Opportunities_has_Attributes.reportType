@@ -377,11 +377,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Non_Digital_Attribute__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Non_Digital_TCR__c</field>
             <table>Opportunity</table>
         </columns>
@@ -911,11 +906,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Attribute_Type__c</field>
-            <table>Opportunity.Attributes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Attribute_Type_Digital_or_Not__c</field>
             <table>Opportunity.Attributes__r</table>
         </columns>
         <columns>

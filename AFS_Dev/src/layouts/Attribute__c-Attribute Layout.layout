@@ -43,10 +43,6 @@
                 <behavior>Readonly</behavior>
                 <field>WTD_TCR_Decimals__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Attribute_Type_Digital_or_Not__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

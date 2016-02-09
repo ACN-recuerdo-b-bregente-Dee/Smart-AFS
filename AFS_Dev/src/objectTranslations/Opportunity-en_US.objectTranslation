@@ -1184,10 +1184,6 @@ No is not an acceptable answer. Please review the MFC Decision Matrix link in th
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Non Digital Attribute --></label>
-        <name>Non_Digital_Attribute__c</name>
-    </fields>
-    <fields>
         <label><!-- Non Digital TCR % --></label>
         <name>Non_Digital_TCR_Percent__c</name>
     </fields>
@@ -1235,6 +1231,10 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
         <help><!-- Read only field to all users except OSPs. Notes field for the OSPs to leverage when adding comments to the opportunity --></help>
         <label><!-- OSP Notes --></label>
         <name>OSP_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp FY --></label>
+        <name>Opp_FY__c</name>
     </fields>
     <fields>
         <help><!-- Number that is system-generated when a new opportunity is created. Opportunity ID field is read-only. --></help>

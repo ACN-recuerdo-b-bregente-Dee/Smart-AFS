@@ -1715,20 +1715,6 @@ No is not an acceptable answer. Please review the MFC Decision Matrix link in th
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Non_Digital_Attribute__c</fullName>
-        <externalId>false</externalId>
-        <label>Non Digital Attribute</label>
-        <summaryFilterItems>
-            <field>Attribute__c.Attribute_Type_Digital_or_Not__c</field>
-            <operation>equals</operation>
-            <value>Non Digital</value>
-        </summaryFilterItems>
-        <summaryForeignKey>Attribute__c.Opportunity_Name__c</summaryForeignKey>
-        <summaryOperation>count</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <type>Summary</type>
-    </fields>
-    <fields>
         <fullName>Non_Digital_TCR_Percent__c</fullName>
         <externalId>false</externalId>
         <formula>IF( Total_Current_Revenue__c = 0, 0, (Non_Digital_TCR__c  / Total_Current_Revenue__c ))</formula>
@@ -1808,6 +1794,17 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opp_FY__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(MONTH(CloseDate) &gt; 8, TEXT(YEAR(CloseDate)+1) ,TEXT(YEAR(CloseDate)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opp FY</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Opportunity_Auto_Id__c</fullName>

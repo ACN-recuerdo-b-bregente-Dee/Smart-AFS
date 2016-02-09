@@ -87,7 +87,6 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>Attribute__c.Attribute_Type_Digital_or_Not__c</groupingColumn>
             <header>Digital and Non Digital TCR</header>
             <legendPosition>Bottom</legendPosition>
             <report>Accenture_Digital_Reports/Accenture_Digital_Pipeline</report>
