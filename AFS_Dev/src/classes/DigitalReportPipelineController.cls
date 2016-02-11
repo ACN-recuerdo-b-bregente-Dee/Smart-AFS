@@ -46,7 +46,7 @@ public class DigitalReportPipelineController {
         AggregateResult[] totalMobilityTCR;
         
         Opportunity[] allOpportunities = new List<Opportunity>([
-        SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Qualified'  
+        SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Qualified' AND Portfolio__c != 'Defense - ASM'  
         ]);
         
         //try{

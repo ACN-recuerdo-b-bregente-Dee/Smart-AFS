@@ -44,7 +44,7 @@ public class DigitalReportUnqualifiedController {
         AggregateResult[] totalMobilityTCR;
         
         Opportunity[] allOpportunities = new List<Opportunity>([
-        SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Unqualified'  
+        SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Unqualified' AND Portfolio__c != 'Defense - ASM'  
         ]);
         
         //try{
