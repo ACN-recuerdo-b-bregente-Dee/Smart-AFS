@@ -1798,7 +1798,9 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
     <fields>
         <fullName>Opp_FY__c</fullName>
         <externalId>false</externalId>
-        <formula>if(MONTH(CloseDate) &gt; 8, TEXT(YEAR(CloseDate)+1) ,TEXT(YEAR(CloseDate)))</formula>
+        <formula>if( ISPICKVAL(Reporting_Status__c, &quot;Won&quot;),
+if(MONTH(Reporting_Status_Since__c) &gt; 8, TEXT(YEAR(Reporting_Status_Since__c)+1) ,TEXT(YEAR(Reporting_Status_Since__c))),
+if(MONTH(CloseDate) &gt; 8, TEXT(YEAR(CloseDate)+1) ,TEXT(YEAR(CloseDate))))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Opp FY</label>
         <required>false</required>
