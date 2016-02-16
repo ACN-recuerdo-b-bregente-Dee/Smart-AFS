@@ -44,9 +44,14 @@ public class DigitalReportPipelineController {
         AggregateResult[] totalInteractiveTCR;
         AggregateResult[] totalAnalyticsTCR;
         AggregateResult[] totalMobilityTCR;
+                
+                
+        //get current fiscal year to compare with opporunity fiscal year
+        String thisYear = String.valueOf(Date.today().year());
         
+        //query opportunities
         Opportunity[] allOpportunities = new List<Opportunity>([
-        SELECT Id FROM Opportunity WHERE  Reporting_Status__c = 'Qualified' AND Portfolio__c != 'Defense - ASM'  
+        SELECT Id FROM Opportunity WHERE Reporting_Status__c = 'Qualified' AND Portfolio__c != 'Defense - ASM' AND Opp_FY__c >= :thisYear
         ]);
         
         //try{
