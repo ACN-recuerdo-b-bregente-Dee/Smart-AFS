@@ -1715,29 +1715,6 @@ No is not an acceptable answer. Please review the MFC Decision Matrix link in th
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Non_Digital_TCR_Percent__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( Total_Current_Revenue__c = 0, 0, (Non_Digital_TCR__c  / Total_Current_Revenue__c ))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Non Digital TCR %</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Non_Digital_TCR__c</fullName>
-        <externalId>false</externalId>
-        <formula>1</formula>
-        <label>Non Digital TCR</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>OCI_Review_Complete__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Y/N field to indicate if Organizational Conflict of Interest review has been completed
@@ -1798,10 +1775,9 @@ If yes, Foreign Travel Coordinator approval required: federal.ap55.required@acce
     <fields>
         <fullName>Opp_FY__c</fullName>
         <externalId>false</externalId>
-        <formula>if( ISPICKVAL(Reporting_Status__c, &quot;Won&quot;),
+        <formula>if(OR(ISPICKVAL(Reporting_Status__c, &quot;Won&quot;),ISPICKVAL(Reporting_Status__c, &quot;Closed&quot;),ISPICKVAL(Reporting_Status__c, &quot;Lost&quot;), ISPICKVAL(Reporting_Status__c, &quot;Client Withdrew&quot;), ISPICKVAL(Reporting_Status__c, &quot;AFS Withdrew&quot;)),
 if(MONTH(Reporting_Status_Since__c) &gt; 8, TEXT(YEAR(Reporting_Status_Since__c)+1) ,TEXT(YEAR(Reporting_Status_Since__c))),
 if(MONTH(CloseDate) &gt; 8, TEXT(YEAR(CloseDate)+1) ,TEXT(YEAR(CloseDate))))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Opp FY</label>
         <required>false</required>
         <trackHistory>false</trackHistory>

@@ -89,6 +89,10 @@
                 <field>Reporting_Status_Since__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Opp_FY__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Type</field>
             </layoutItems>

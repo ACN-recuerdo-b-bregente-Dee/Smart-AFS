@@ -852,16 +852,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Non_Digital_TCR__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Non_Digital_TCR_Percent__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Won_Or_Open_Status__c</field>
             <table>Opportunity</table>
         </columns>

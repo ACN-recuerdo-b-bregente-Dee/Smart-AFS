@@ -12,10 +12,6 @@
     <columns>
         <field>Opportunity.Attributes__r$Attribute_Type__c</field>
     </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity$Non_Digital_TCR__c</field>
-    </columns>
     <filter>
         <criteriaItems>
             <column>Opportunity$Reporting_Status__c</column>

@@ -5,14 +5,6 @@
         <field>Opportunity.Total_Current_Revenue__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity.Non_Digital_TCR__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity.Non_Digital_TCR_Percent__c</field>
-    </columns>
-    <columns>
         <field>Attribute__c.Attribute_Type__c</field>
     </columns>
     <columns>

@@ -56,14 +56,6 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>AccentureDigitalReportExt</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>AccentureTCRReportCotroller</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>AccountBL</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -140,10 +132,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>DigitalReportPipelineControllerTest2</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>DigitalReportUnqualifiedController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -194,18 +182,6 @@
     <classAccesses>
         <apexClass>OpportunityTeamRoleHandler</apexClass>
         <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Opportunity_Chart_Controller</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PieChartController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PieChartRemoteController</apexClass>
-        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>PipelineReportController</apexClass>
@@ -1755,16 +1731,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Non_Digital_TCR_Percent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Non_Digital_TCR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.OCI_Review_Complete__c</field>
         <readable>true</readable>
@@ -1782,7 +1748,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Opp_FY__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3557,10 +3523,6 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
-        <apexPage>AccentureTCRReport</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>AddAttribute</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -3597,16 +3559,8 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>DisplayChart</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>DisplayStaticText</apexPage>
         <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>OpportunityChartVF</apexPage>
-        <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>PipelineReport</apexPage>
@@ -3650,10 +3604,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>stdSchedulePage</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>test_salesforce</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

@@ -41,13 +41,6 @@
     <middleSection>
         <columnSize>Wide</columnSize>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>VisualforcePage</componentType>
-            <header>Accenture Digital vs. Opp TCR</header>
-            <page>AccentureTCRReport</page>
-            <pageHeightInPixels>300</pageHeightInPixels>
-        </components>
-        <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>

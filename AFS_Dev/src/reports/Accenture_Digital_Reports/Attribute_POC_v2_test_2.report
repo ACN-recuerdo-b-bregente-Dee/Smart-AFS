@@ -10,13 +10,6 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.Total_Current_Revenue__c</field>
     </columns>
-    <columns>
-        <field>Opportunity.Non_Digital_TCR_Percent__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity.Non_Digital_TCR__c</field>
-    </columns>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
