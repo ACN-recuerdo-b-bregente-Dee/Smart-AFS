@@ -346,6 +346,15 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_ECSD_to_Today</fullName>
+        <field>CloseDate</field>
+        <formula>Today()</formula>
+        <name>Update ECSD to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_OSP_Notes_to_null</fullName>
         <field>OSP_Notes__c</field>
         <name>Update OSP Notes to null</name>
@@ -856,6 +865,21 @@ NULL
             <value>Stage 3</value>
         </criteriaItems>
         <description>If Stage = Stage 3, update Stage 3 Offline sent to Today.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update ECSD to Today</fullName>
+        <actions>
+            <name>Update_ECSD_to_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Reporting_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Unqualified,Qualified</value>
+        </criteriaItems>
+        <description>Update ECSD to Today if reporting status is not qualified or qualifed</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
