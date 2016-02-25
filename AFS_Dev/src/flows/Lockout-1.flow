@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Lockout {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lockout</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Announcement_Page</name>
+        <label>Announcement Page</label>
+        <locationX>102</locationX>
+        <locationY>145</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>false</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>DisplayAnnouncement</name>
+            <fieldText>SMaRT is currently locked for quarter end data cleansing activities and will unlock on 12/3/15. For questions related to the lockout, please contact AFS.Sales. For questions related to opportunity approvals, please contact AFS.OSPs. Thank you.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Announcement_Page</startElementReference>
+</Flow>

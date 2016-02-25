@@ -288,6 +288,10 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Application Modernization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>ASM - Synergy</fullName>
                 <controllingFieldValues>Ventures &amp; Acquisitions</controllingFieldValues>
                 <default>false</default>
@@ -456,6 +460,11 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
             <picklistValues>
                 <fullName>Digital Strategy &amp; Business Architecture</fullName>
                 <controllingFieldValues>ADMIN:Digital Customer</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital Studio</fullName>
+                <controllingFieldValues>Horizontals/Initiatives</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1006,10 +1015,6 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
             <picklistValues>
                 <fullName>WORKDAY</fullName>
                 <controllingFieldValues>Alliance</controllingFieldValues>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Application Modernization</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>

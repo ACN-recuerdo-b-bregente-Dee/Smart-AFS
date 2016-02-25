@@ -804,6 +804,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
         <label>Contract Vehicle</label>
         <picklist>
             <picklistValues>
+                <fullName>AFMSTT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Alliant</fullName>
                 <default>false</default>
             </picklistValues>
@@ -845,6 +849,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
             </picklistValues>
             <picklistValues>
                 <fullName>Dept of Energy NNSA TEPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DHMSM</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -4804,7 +4812,7 @@ opp.id = &quot;{!Opportunity.Id}&quot;;
 if(&apos;{!User.Profile}&apos; != &apos;System Administrator&apos; &amp;&amp; &apos;{!User.Profile}&apos; != &apos;AFS Sales Ops&apos;)
 {
 
-window.location = &apos;/apex/Admin_Only&apos;
+//do nothing since user should not be using button
 
 } 
 else

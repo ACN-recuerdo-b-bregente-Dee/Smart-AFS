@@ -292,6 +292,10 @@
             <translation><!-- Digital Strategy &amp; Business Architecture --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Digital Studio</masterLabel>
+            <translation><!-- Digital Studio --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Digital Supply Chain, Manufacturing, Operations</masterLabel>
             <translation><!-- Digital Supply Chain, Manufacturing, Operations --></translation>
         </picklistValues>

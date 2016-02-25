@@ -490,6 +490,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         <label><!-- Contract Vehicle --></label>
         <name>Contract_Vehicle__c</name>
         <picklistValues>
+            <masterLabel>AFMSTT</masterLabel>
+            <translation><!-- AFMSTT --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>ATRRS</masterLabel>
             <translation><!-- ATRRS --></translation>
         </picklistValues>
@@ -520,6 +524,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         <picklistValues>
             <masterLabel>CMS VDC</masterLabel>
             <translation><!-- CMS VDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHMSM</masterLabel>
+            <translation><!-- DHMSM --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>DHS EAGLE II, FC1-Unrestricted (AFS &amp; ASMR)</masterLabel>
