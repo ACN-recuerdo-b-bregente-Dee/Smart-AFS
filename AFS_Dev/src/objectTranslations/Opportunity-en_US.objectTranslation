@@ -797,6 +797,11 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         <name>Date_of_Opportunity_QA_Review_3__c</name>
     </fields>
     <fields>
+        <help><!-- Days Sales Outstanding (DSO) is a measure of the average number of days to collect cash after the sale of goods or services have been delivered. --></help>
+        <label><!-- Days Sales Outstanding --></label>
+        <name>Days_Sales_Outstanding__c</name>
+    </fields>
+    <fields>
         <help><!-- Indicate which, if any, Delivery Centers will be involved in contract delivery. --></help>
         <label><!-- Delivery Centers --></label>
         <name>Delivery_Centers__c</name>
@@ -2329,6 +2334,10 @@ Best Case: 10% --></help>
     <validationRules>
         <errorMessage><!-- OPP-001: You must provide a Contract Vehicle when Hierarchy Level equals Task Order. --></errorMessage>
         <name>Contract_Vehicle_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The DSO field is required when the Peak Capital Field is populated --></errorMessage>
+        <name>DSO</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- OPP-023: Please enter a Draft RFP Release Date before the RFP Release Date. --></errorMessage>

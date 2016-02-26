@@ -314,6 +314,10 @@
                 <field>Peak_Capital_Balance__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Days_Sales_Outstanding__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Subcontractor_Involvement__c</field>
             </layoutItems>
