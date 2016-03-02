@@ -3839,7 +3839,8 @@ ISPICKVAL( Hierarchy_Level__c , &quot;Task Order&quot;), ISBLANK(Text( Contract_
         <active>true</active>
         <description>DSO field is required when peak capital field is inputted</description>
         <errorConditionFormula>NOT( ISNULL( Peak_Capital_Balance__c )) &amp;&amp;  ISNULL( Days_Sales_Outstanding__c )</errorConditionFormula>
-        <errorMessage>The DSO field is required when the Peak Capital Field is populated</errorMessage>
+        <errorDisplayField>Days_Sales_Outstanding__c</errorDisplayField>
+        <errorMessage>OPP-044: Required if Peak Capital Balance is populated.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Draft_Before_Release_Date</fullName>

@@ -2336,7 +2336,7 @@ Best Case: 10% --></help>
         <name>Contract_Vehicle_is_Required</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- The DSO field is required when the Peak Capital Field is populated --></errorMessage>
+        <errorMessage><!-- OPP-044: Required if Peak Capital Balance is populated. --></errorMessage>
         <name>DSO</name>
     </validationRules>
     <validationRules>
