@@ -177,7 +177,14 @@
                         </apex:outputText> 
                     </td>                           
                 </tr>
-               
+                <tr>
+                    <td> Days Sales Outstanding </td>
+                    <td>
+                        <apex:outputText value="{0,number,#,##0}">
+                            <apex:param value="{!relatedTo.Days_Sales_Outstanding__c}"/>
+                        </apex:outputText>
+                    </td>
+                </tr>  
                 <tr>  
                     <td> Bank Guarantee/Letter of Credit </td>
                     <td>{!relatedTo.Bank_Guarantee_Letter_of_Credit__c}</td>        

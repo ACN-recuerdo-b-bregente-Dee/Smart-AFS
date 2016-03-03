@@ -108,7 +108,7 @@
                 <tr>  
                     <td> TCR ($K)</td>   
                     <td>
-                        <apex:outputText value="${0,number,###,###,###,##0}">  
+                        <apex:outputText value="{0,number,###,###,###,##0}">  
                             <apex:param value="{!relatedTo.Total_Current_Revenue__c}"/>  
                         </apex:outputText> 
                     </td>
@@ -149,6 +149,14 @@
                             <apex:param value="{!relatedTo.Peak_Capital_Balance__c}"/>  
                         </apex:outputText> 
                     </td>                           
+                </tr>
+                <tr>
+                    <td> Days Sales Outstanding </td>
+                    <td>
+                        <apex:outputText value="{0,number,#,##0}">
+                            <apex:param value="{!relatedTo.Days_Sales_Outstanding__c}"/>
+                        </apex:outputText>
+                    </td>
                 </tr>  
                     <td> Subcontractor Involvement % </td>
                     <td>{!relatedTo.Subcontractor_Involvement__c}</td>          
