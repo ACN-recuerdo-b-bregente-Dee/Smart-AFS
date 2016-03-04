@@ -242,6 +242,7 @@ private class AttributeBLTest{
         testOpp2.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOpp2.ONCONUS_Work_Required__c='No';
         testOpp2.Peak_Capital_Balance__c=1000;
+        testOpp2.Days_Sales_Outstanding__c=100;
         testOpp2.Primary_Function__c='Business Support';
         testOpp2.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOpp2.Proposal_Submission_Date__c=System.today() + 4;
@@ -381,6 +382,7 @@ private class AttributeBLTest{
         testOpp.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOpp.ONCONUS_Work_Required__c='No';
         testOpp.Peak_Capital_Balance__c=1000;
+        testOpp.Days_Sales_Outstanding__c=100;
         testOpp.Primary_Function__c='Business Support';
         testOpp.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOpp.Proposal_Submission_Date__c=System.today() + 4;
@@ -477,6 +479,7 @@ private class AttributeBLTest{
         testOpp.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOpp.ONCONUS_Work_Required__c='No';
         testOpp.Peak_Capital_Balance__c=1000;
+        testOpp.Days_Sales_Outstanding__c=100;
         testOpp.Primary_Function__c='Business Support';
         testOpp.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOpp.Proposal_Submission_Date__c=System.today() + 4;
@@ -614,6 +617,7 @@ private class AttributeBLTest{
         testOpp.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOpp.ONCONUS_Work_Required__c='No';
         testOpp.Peak_Capital_Balance__c=1000;
+        testOpp.Days_Sales_Outstanding__c=100;
         testOpp.Primary_Function__c='Business Support';
         testOpp.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOpp.Proposal_Submission_Date__c=System.today() + 4;
@@ -884,6 +888,7 @@ private class AttributeBLTest{
         testOpp.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOpp.ONCONUS_Work_Required__c='No';
         testOpp.Peak_Capital_Balance__c=1000;
+        testOpp.Days_Sales_Outstanding__c=100;
         testOpp.Primary_Function__c='Business Support';
         testOpp.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOpp.Proposal_Submission_Date__c=System.today() + 4;
@@ -988,6 +993,7 @@ private class AttributeBLTest{
         testOpp.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOpp.ONCONUS_Work_Required__c='No';
         testOpp.Peak_Capital_Balance__c=1000;
+        testOpp.Days_Sales_Outstanding__c=100;
         testOpp.Primary_Function__c='Business Support';
         testOpp.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOpp.Proposal_Submission_Date__c=System.today() + 4;

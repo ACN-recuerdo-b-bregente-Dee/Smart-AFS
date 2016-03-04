@@ -10,7 +10,7 @@
 /*
 * - OpportunityBLTest
 */
-private without sharing class OpportunityBLTest{
+private with sharing class OpportunityBLTest{
 
     private static Id testPersonGlobalId;
     private static Opportunity recordOppCost;
@@ -75,7 +75,7 @@ private without sharing class OpportunityBLTest{
         * - Test Person
         */     
         Person__c testPersonGlobal = new Person__c(
-            Name='Test name',
+            Name='Test name1',
             email__c='test@email.com',
             user_type__c='AFS'
         ); 
@@ -123,8 +123,8 @@ private without sharing class OpportunityBLTest{
     * - Test Person
     */     
         Person__c testPerson = new Person__c(
-            Name='Test name for Person',
-            email__c='testPerson@email.com',
+            Name='Test name2',
+            email__c='test@email.com',
             user_type__c='AFS'
         ); 
         database.insert(testPerson,true);
@@ -233,6 +233,7 @@ private without sharing class OpportunityBLTest{
         testOppDate.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOppDate.ONCONUS_Work_Required__c='No';
         testOppDate.Peak_Capital_Balance__c=1000;
+        testOppDate.Days_Sales_Outstanding__c=100;
         testOppDate.Primary_Function__c='Business Support';
         testOppDate.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOppDate.Proposal_Submission_Date__c=System.today() + 4;
@@ -301,6 +302,7 @@ private without sharing class OpportunityBLTest{
         testOppEndDate.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOppEndDate.ONCONUS_Work_Required__c='No';
         testOppEndDate.Peak_Capital_Balance__c=1000;
+        testOppEndDate.Days_Sales_Outstanding__c=100;
         testOppEndDate.Primary_Function__c='Business Support';
         testOppEndDate.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOppEndDate.Proposal_Submission_Date__c=System.today() + 4;
@@ -350,8 +352,8 @@ private without sharing class OpportunityBLTest{
          * - Test Person
         */     
         Person__c testPerson2 = new Person__c(
-            Name='Test name for Team Role',
-            email__c='test21@email.com',
+            Name='Test name for Team Role1',
+            email__c='test@email.com',
             user_type__c='AFS'
         ); 
             database.insert(testPerson2,true);         
@@ -409,6 +411,7 @@ private without sharing class OpportunityBLTest{
         testOppCost.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOppCost.ONCONUS_Work_Required__c='No';
         testOppCost.Peak_Capital_Balance__c=1000;
+        testOppCost.Days_Sales_Outstanding__c=100;
         testOppCost.Primary_Function__c='Business Support';
         testOppCost.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOppCost.Proposal_Submission_Date__c=System.today() + 4;
@@ -475,6 +478,7 @@ private without sharing class OpportunityBLTest{
         testOpp.Industry_Sub_Segment__c ='D&PS PUBLIC SAFETY';
         testOpp.ONCONUS_Work_Required__c='No';
         testOpp.Peak_Capital_Balance__c=1000;
+        testOpp.Days_Sales_Outstanding__c=100;
         testOpp.Primary_Function__c='Business Support';
         testOpp.Is_AFS_Prime_or_Subcontractor__c='Prime';
         testOpp.Proposal_Submission_Date__c=System.today() + 4;
@@ -576,10 +580,11 @@ private without sharing class OpportunityBLTest{
         
         prepdata0();
         Test.startTest();
-        
+        System.debug('pre testOpportunityBL05');
         OpportunityHandler.firstRunForBeforeUpdate=True;
         OpportunityHandler.firstRunForAfterUpdate=True;
         prepdata2ERR();
+        System.debug('post testOpportunityBL05');
 
         Test.stopTest();
         System.assertNotEquals(null, opp);

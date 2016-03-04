@@ -161,6 +161,7 @@ private class CreateSnapshotsTest{
         testOpp.Outsourcing_End__c = System.today() + 45;
         testOpp.Outsourcing_Start__c = System.today() + 42;
         testOpp.Peak_Capital_Balance__c = 24000;
+        testOpp.Days_Sales_Outstanding__c=100;
         testOpp.Proposal_Submission_Date__c = System.today() + 40;
         testOpp.Reporting_Status__c = 'Unqualified';
         testOpp.Reporting_Status_Since__c = System.today() + 40;
@@ -210,6 +211,7 @@ private class CreateSnapshotsTest{
         testOpp2.Outsourcing_End__c = System.today() + 45;
         testOpp2.Outsourcing_Start__c = System.today() + 42;
         testOpp2.Peak_Capital_Balance__c = 24000;
+        testOpp2.Days_Sales_Outstanding__c=100;
         testOpp2.Proposal_Submission_Date__c = System.today() + 40;
         testOpp2.Reporting_Status__c = 'Unqualified';
         testOpp2.Reporting_Status_Since__c = System.today() + 40;

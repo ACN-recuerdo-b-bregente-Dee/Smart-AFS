@@ -1138,9 +1138,9 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
         <externalId>false</externalId>
         <inlineHelpText>Days Sales Outstanding (DSO) is a measure of the average number of days to collect cash after the sale of goods or services have been delivered.</inlineHelpText>
         <label>Days Sales Outstanding</label>
-        <precision>18</precision>
+        <precision>3</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>

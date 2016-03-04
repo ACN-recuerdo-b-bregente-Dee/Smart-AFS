@@ -180,7 +180,7 @@
                 <tr>
                     <td> Days Sales Outstanding </td>
                     <td>
-                        <apex:outputText value="{0,number,#,##0}">
+                        <apex:outputText value="{0,number,##0}">
                             <apex:param value="{!relatedTo.Days_Sales_Outstanding__c}"/>
                         </apex:outputText>
                     </td>
