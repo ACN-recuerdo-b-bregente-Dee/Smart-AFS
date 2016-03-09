@@ -174,8 +174,11 @@ public with sharing class RevenueBL {
             FROM OpportunityLineItem WHERE OpportunityId IN :opportunityIds]);
         
         //call method to re-calculate revenue schedule
-        RevenueBL.setRevenueSchedule(newOpportunityLineItemMap, UTIL_Constants.REVENUE_BL_ORIGIN);
-        setOpportunityRevenue(newOpportunityLineItemMap);
+        if(!newOpportunityLineItemMap.isEmpty()){
+            RevenueBL.setRevenueSchedule(newOpportunityLineItemMap, UTIL_Constants.REVENUE_BL_ORIGIN);
+            setOpportunityRevenue(newOpportunityLineItemMap);
+        }
+        
     }
     
     public static void setOpportunityRevenue(Map<Id, OpportunityLineItem> newOpportunityLineItemMap){
