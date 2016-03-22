@@ -2337,7 +2337,7 @@ Best Case: 10% --></help>
     </validationRules>
     <validationRules>
         <errorMessage><!-- OPP-044: Required if Peak Capital Balance is populated. --></errorMessage>
-        <name>DSO</name>
+        <name>DSO_Required_When_PCB_Not_Null</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- OPP-023: Please enter a Draft RFP Release Date before the RFP Release Date. --></errorMessage>

@@ -3835,7 +3835,7 @@ ISPICKVAL( Hierarchy_Level__c , &quot;Task Order&quot;), ISBLANK(Text( Contract_
         <errorMessage>OPP-001: You must provide a Contract Vehicle when Hierarchy Level equals Task Order.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>DSO</fullName>
+        <fullName>DSO_Required_When_PCB_Not_Null</fullName>
         <active>true</active>
         <description>DSO field is required when peak capital field is inputted</description>
         <errorConditionFormula>NOT( ISNULL( Peak_Capital_Balance__c )) &amp;&amp;  ISNULL( Days_Sales_Outstanding__c )</errorConditionFormula>
