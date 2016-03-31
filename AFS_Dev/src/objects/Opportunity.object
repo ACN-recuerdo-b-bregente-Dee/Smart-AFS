@@ -812,6 +812,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Army Private Cloud Enterprise (APCE) Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>ATRRS</fullName>
                 <default>false</default>
             </picklistValues>

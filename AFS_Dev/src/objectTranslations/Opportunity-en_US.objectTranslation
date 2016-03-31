@@ -502,6 +502,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
             <translation><!-- Alliant --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Army Private Cloud Enterprise (APCE) Services</masterLabel>
+            <translation><!-- Army Private Cloud Enterprise (APCE) Services --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>CATS</masterLabel>
             <translation><!-- CATS --></translation>
         </picklistValues>
