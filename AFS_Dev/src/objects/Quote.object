@@ -291,7 +291,7 @@
         <fullName>PeakCapitalBalance__c</fullName>
         <externalId>false</externalId>
         <label>Peak Capital Balance</label>
-        <precision>16</precision>
+        <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
         <type>Currency</type>

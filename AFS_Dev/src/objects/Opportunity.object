@@ -1028,11 +1028,19 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>SSES NexGen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>SSA A&amp;A</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>SSA ITSSC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>T4NG</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>

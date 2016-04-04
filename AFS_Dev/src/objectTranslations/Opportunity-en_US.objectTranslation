@@ -722,6 +722,14 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
             <translation><!-- SSA ITSSC --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>SSES NexGen</masterLabel>
+            <translation><!-- SSES NexGen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T4NG</masterLabel>
+            <translation><!-- T4NG --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>TIPSS-4</masterLabel>
             <translation><!-- TIPSS-4 --></translation>
         </picklistValues>
