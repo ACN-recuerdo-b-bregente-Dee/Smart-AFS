@@ -303,7 +303,7 @@
         <fullName>Primary_Function__c</fullName>
         <externalId>false</externalId>
         <label>Primary Function</label>
-        <length>50</length>
+        <length>255</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -328,7 +328,7 @@
         <fullName>QA_Assessment_Stage_2B__c</fullName>
         <externalId>false</externalId>
         <label>QA Assessment - Stage 2B</label>
-        <length>10</length>
+        <length>50</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -337,7 +337,7 @@
         <fullName>QA_Assessment_Stage_3__c</fullName>
         <externalId>false</externalId>
         <label>QA Assessment - Stage 3</label>
-        <length>10</length>
+        <length>50</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -346,7 +346,7 @@
         <fullName>QA_Risk_Tier_Stage_2B__c</fullName>
         <externalId>false</externalId>
         <label>QA Risk Tier - Stage 2B</label>
-        <length>10</length>
+        <length>50</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -355,7 +355,7 @@
         <fullName>QA_Risk_Tier_Stage_3__c</fullName>
         <externalId>false</externalId>
         <label>QA Risk Tier - Stage 3</label>
-        <length>10</length>
+        <length>50</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>

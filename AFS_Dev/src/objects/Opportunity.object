@@ -196,9 +196,9 @@
         <fullName>Account_Plan_OI__c</fullName>
         <externalId>false</externalId>
         <label>Account Plan OI%</label>
-        <precision>18</precision>
+        <precision>17</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>1</scale>
         <trackHistory>false</trackHistory>
         <type>Percent</type>
     </fields>
