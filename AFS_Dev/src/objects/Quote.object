@@ -133,10 +133,9 @@
         <fullName>Complexity_Category__c</fullName>
         <externalId>false</externalId>
         <label>Complexity Category</label>
-        <length>50</length>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
+        <length>8000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
     </fields>
     <fields>
         <fullName>Complexity_Description__c</fullName>
@@ -291,7 +290,7 @@
         <fullName>PeakCapitalBalance__c</fullName>
         <externalId>false</externalId>
         <label>Peak Capital Balance</label>
-        <precision>18</precision>
+        <precision>16</precision>
         <required>false</required>
         <scale>0</scale>
         <type>Currency</type>
@@ -303,7 +302,7 @@
         <fullName>Primary_Function__c</fullName>
         <externalId>false</externalId>
         <label>Primary Function</label>
-        <length>255</length>
+        <length>50</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -328,7 +327,7 @@
         <fullName>QA_Assessment_Stage_2B__c</fullName>
         <externalId>false</externalId>
         <label>QA Assessment - Stage 2B</label>
-        <length>50</length>
+        <length>10</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -337,7 +336,7 @@
         <fullName>QA_Assessment_Stage_3__c</fullName>
         <externalId>false</externalId>
         <label>QA Assessment - Stage 3</label>
-        <length>50</length>
+        <length>10</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -346,7 +345,7 @@
         <fullName>QA_Risk_Tier_Stage_2B__c</fullName>
         <externalId>false</externalId>
         <label>QA Risk Tier - Stage 2B</label>
-        <length>50</length>
+        <length>10</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -355,7 +354,7 @@
         <fullName>QA_Risk_Tier_Stage_3__c</fullName>
         <externalId>false</externalId>
         <label>QA Risk Tier - Stage 3</label>
-        <length>50</length>
+        <length>10</length>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>

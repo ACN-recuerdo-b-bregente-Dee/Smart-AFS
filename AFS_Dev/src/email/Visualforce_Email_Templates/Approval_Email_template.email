@@ -83,7 +83,11 @@
                 <tr>  
                     <td> Opp ID </td>
                     <td>{!relatedTo.Opportunity_ID__c}</td>         
-                </tr>               
+                </tr>         
+                <tr>  
+                    <td> Opp Type </td>
+                    <td>{!relatedTo.Type}</td>         
+                </tr>           
                 <tr>  
                     <td> Hierarchy Level </td>
                     <td>{!relatedTo.Hierarchy_Level__c}</td>        
@@ -139,6 +143,14 @@
                     <td>
                         <apex:outputText value="{0,number,#,##0.0}%">  
                             <apex:param value="{!relatedTo.Blended_Target_OI__c}"/>  
+                        </apex:outputText> 
+                    </td>                           
+                </tr>
+                <tr>  
+                    <td> Account Plan OI% </td>
+                    <td>
+                        <apex:outputText value="{0,number,#,##0.0}%">  
+                            <apex:param value="{!relatedTo.Account_Plan_OI__c}"/>  
                         </apex:outputText> 
                     </td>                           
                 </tr>

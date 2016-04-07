@@ -88,6 +88,11 @@
                     <td> Opp ID </td>
                     <td>{!relatedTo.Opportunity_ID__c}</td>         
                 </tr>
+                
+                <tr>  
+                    <td> Opp Type </td>
+                    <td>{!relatedTo.Type}</td>         
+                </tr>
                
                 <tr>  
                     <td> Consulting Start Date </td>
