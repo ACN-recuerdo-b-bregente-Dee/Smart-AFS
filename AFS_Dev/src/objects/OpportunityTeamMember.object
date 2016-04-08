@@ -86,10 +86,6 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Global CAL</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Managing Director MC</fullName>
                 <default>false</default>
             </picklistValues>

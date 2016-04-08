@@ -128,10 +128,7 @@
                     </td>
      
                 </tr>   
-                <tr>
-                    <td>Account Plan OI% </td>
-                    <td>{!relatedTo.Account_Plan_OI__c}%</td>
-                </tr>
+
                 <tr>
                     <td>Can Account Plan OI% Be Met? </td>
                     <td>{!relatedTo.Account_OI_Plan_Be_Met__c} </td>
@@ -172,6 +169,10 @@
                             <apex:param value="{!relatedTo.Blended_Target_OI__c}"/>  
                         </apex:outputText> 
                     </td>                           
+                </tr>
+                <tr>
+                    <td>Account Plan OI% </td>
+                    <td>{!relatedTo.Account_Plan_OI__c}%</td>
                 </tr>
            
                 <tr>  
