@@ -912,6 +912,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>GEHA Cloud Sherpas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>GSA EAAS BPA</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1028,15 +1032,15 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>SSES NexGen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>SSA A&amp;A</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>SSA ITSSC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SSES NexGen</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>

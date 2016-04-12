@@ -598,6 +598,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
             <translation><!-- FDIC ITAS --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>GEHA Cloud Sherpas</masterLabel>
+            <translation><!-- GEHA Cloud Sherpas --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>GSA EAAS BPA</masterLabel>
             <translation><!-- GSA EAAS BPA --></translation>
         </picklistValues>
