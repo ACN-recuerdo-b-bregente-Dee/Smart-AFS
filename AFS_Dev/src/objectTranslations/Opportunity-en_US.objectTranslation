@@ -690,6 +690,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
             <translation><!-- Navy BSC --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Navy FIP</masterLabel>
+            <translation><!-- Navy FIP --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Navy SeaPort-e (AFS/ASMR)</masterLabel>
             <translation><!-- Navy SeaPort-e (AFS/ASMR) --></translation>
         </picklistValues>
@@ -728,6 +732,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         <picklistValues>
             <masterLabel>SSES NexGen</masterLabel>
             <translation><!-- SSES NexGen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SplunK</masterLabel>
+            <translation><!-- SplunK --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>T4NG</masterLabel>

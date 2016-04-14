@@ -996,6 +996,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Navy FIP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Navy SeaPort-e (AFS/ASMR)</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1029,6 +1033,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
             </picklistValues>
             <picklistValues>
                 <fullName>PSC IDIQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SplunK</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
