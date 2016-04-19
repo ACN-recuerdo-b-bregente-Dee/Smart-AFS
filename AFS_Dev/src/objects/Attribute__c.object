@@ -903,6 +903,11 @@ Opportunity_Name__r.Total_Deal_Potential__c *  AttributePercent__c)</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>SplunK</fullName>
+                <controllingFieldValues>Alliance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Strategy</fullName>
                 <controllingFieldValues>MC Offerings</controllingFieldValues>
                 <default>false</default>

@@ -648,6 +648,10 @@
             <translation><!-- Shared Services --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>SplunK</masterLabel>
+            <translation><!-- SplunK --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Strategy</masterLabel>
             <translation><!-- Strategy --></translation>
         </picklistValues>
