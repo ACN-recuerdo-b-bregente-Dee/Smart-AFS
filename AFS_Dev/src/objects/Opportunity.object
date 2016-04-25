@@ -804,6 +804,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
         <label>Contract Vehicle</label>
         <picklist>
             <picklistValues>
+                <fullName>ACCENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>AFMSTT</fullName>
                 <default>false</default>
             </picklistValues>
@@ -976,6 +980,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>IT MSA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>JITC</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1033,6 +1041,10 @@ IF (ISPICKVAL(Reporting_Status__c, &apos;Client Withdrew&apos;) ,Total_Current_R
             </picklistValues>
             <picklistValues>
                 <fullName>PSC IDIQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SAM</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>

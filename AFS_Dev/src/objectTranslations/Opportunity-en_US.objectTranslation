@@ -490,6 +490,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         <label><!-- Contract Vehicle --></label>
         <name>Contract_Vehicle__c</name>
         <picklistValues>
+            <masterLabel>ACCENT</masterLabel>
+            <translation><!-- ACCENT --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>AFMSTT</masterLabel>
             <translation><!-- AFMSTT --></translation>
         </picklistValues>
@@ -654,6 +658,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
             <translation><!-- IRS RAS BPA --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>IT MSA</masterLabel>
+            <translation><!-- IT MSA --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Interior BOEMRE MRMSS</masterLabel>
             <translation><!-- Interior BOEMRE MRMSS --></translation>
         </picklistValues>
@@ -720,6 +728,10 @@ No is not an acceptable answer. Please review the checklist link in the Custom L
         <picklistValues>
             <masterLabel>PSC IDIQ</masterLabel>
             <translation><!-- PSC IDIQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAM</masterLabel>
+            <translation><!-- SAM --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>SSA A&amp;A</masterLabel>
